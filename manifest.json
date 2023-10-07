@@ -1,0 +1,25 @@
+{
+    "manifest_version": 1,
+    "name": "Alenljung Sauce for Zwift Mods",
+    "description": "Alenljung Sauce for Zwift Mods",
+    "author": "Tord Alenljung",
+    "website_url": "https://github.com/talenljung/alenljung_s4z_mods",
+    "version": "0.0.1",
+    "web_root": "pages",
+    "windows": [
+    {
+        "file": "pages/effective-cda.html",
+        "id": "alenljung-effective-cda",
+        "name": "Effective CdA",
+        "description": "Display the Effective CdA",
+        "always_visible": true,
+        "overlay": true,
+        "frame": false,
+        "default_bounds": {
+            "width": 400,
+            "height": 400,
+            "x": -300,
+            "y": 100
+        }
+    }]
+}
