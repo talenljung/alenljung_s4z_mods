@@ -21,5 +21,20 @@
             "x": -300,
             "y": 100
         }
+    },
+    {
+        "file": "pages/pull-duration.html",
+        "id": "alenljung-pull-duration",
+        "name": "Pull Duration",
+        "description": "Show duration etc. of pulls at the front",
+        "always_visible": true,
+        "overlay": true,
+        "frame": false,
+        "default_bounds": {
+            "width": 400,
+            "height": 400,
+            "x": -300,
+            "y": 100
+        }
     }]
 }
