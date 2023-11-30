@@ -51,6 +51,14 @@ if (window.isElectron) {
     }
 }
 
+function download(datalog) {
+    var data = "athleteId, time, deltaTimeMs, watching.state.power, watching.state.distance, altitude, gradientPercent, gradientPercentAverage, watching.state.grade, watching.state.draft, speedKph, height, riderWeight, bikeWeight, crr, cda, cdaAverage, selectedBike, cdaAverageWindowSizeMs\n";
+    data += datalog.join('\n');
+    var blob = new Blob([data], {type: "text/csv"});
+    var url  = window.URL.createObjectURL(blob);
+    window.location.assign(url);
+}
+
 function timeWindowAverage(values, deltaTimes, windowSize) {
     let accumTime = 0;
     let accumValuesXTime = 0;
@@ -123,6 +131,17 @@ export async function main() {
     setBackground();
     render();
 
+    let datalog = [];
+    let datalogMaxLength = 3000;
+    document.addEventListener('keydown', ev => {
+        if (ev.ctrlKey && ev.shiftKey) {
+            if (ev.key === 'D') {
+                ev.preventDefault();
+                download(datalog);
+            }
+        }
+    }, {capture: true});
+
     let athleteId;
 
     let altitudeOld = null;
@@ -134,6 +153,7 @@ export async function main() {
     let pwrTimeMaxSize = 20;
     let pwrAverageTimeMs = 2000;
     let speedKphOld = null;
+    let powerOld = null;
     const gradientAverageWindowSizeMs = 500;
     const historyLength = 200;
     const extraWeight = 0.2;
@@ -146,6 +166,7 @@ export async function main() {
             altitudeOld = null;
             timeOld = null;
             speedKphOld = null;
+            powerOld = null;
         }
         const altitude = watching.state.altitude;
         const time = watching.state.worldTime;
@@ -158,6 +179,7 @@ export async function main() {
             altitudeOld = altitude;
         }
         speedKphOld = speedKphOld ?? speedKph;
+        powerOld = powerOld ?? watching.state.power;
         
         const deltaTimeMs = time - timeOld;
         const deltaDistance = speedKph * deltaTimeMs / 3600;
@@ -175,12 +197,16 @@ export async function main() {
         const bikeWeight = bikeData[selectedBike].weight + extraWeight;
         const height = watching.athlete.height
         const crr = bikeData[selectedBike].crr;
-        //const cda = effectiveCda(height, riderWeight, bikeWeight, watching.state.power, speedKph, speedKphOld, deltaTimeMs/1000, gradientPercentAverage, crr);
-        const cda = effectiveCda(height, riderWeight, bikeWeight, watching.state.power, speedKph, speedKphOld, deltaTimeMs/1000, gradientPercentHistory[gradientPercentHistory.length-2], crr);
+        const powerToUse = deltaTimeMs > 300 ? watching.state.power : powerOld;
+        const cda = effectiveCda(height, riderWeight, bikeWeight, powerToUse, speedKph, speedKphOld, deltaTimeMs/1000, gradientPercentHistory[gradientPercentHistory.length-2], crr);
         cdaHistory.push(cda);
         const cdaAverage = timeWindowAverage(cdaHistory, deltaTimeMsHistory, cdaAverageWindowSizeMs);
 
         const logarray = [athleteId, time, deltaTimeMs, watching.state.power, watching.state.distance, altitude, gradientPercent, gradientPercentAverage, watching.state.grade, watching.state.draft, speedKph, height, riderWeight, bikeWeight, crr, cda, cdaAverage, selectedBike, cdaAverageWindowSizeMs];
+        datalog.push(logarray)
+        while (datalog.length > datalogMaxLength) {
+            datalog.shift();
+        }
         console.debug(logarray)
         if (page == 'effective-cda') {
             document.getElementById('act_cda').innerHTML = formatcda(cdaAverage);
@@ -188,6 +214,7 @@ export async function main() {
         timeOld = time;
         speedKphOld = speedKph;
         altitudeOld = altitude;
+        powerOld = watching.state.power;
         while (gradientPercentHistory.length > historyLength)
         {
             gradientPercentHistory.shift();
