@@ -9,13 +9,15 @@ const num = H.number;
 let gameConnection;
 const page = location.pathname.split('/').at(-1).split('.')[0];
 
+const defaultPullPowerThreshold = 0;
+const defaultMinDuration = 5;
+
 common.settingsStore.setDefault({
     overlayMode: false,
     solidBackground: false,
     backgroundColor: '#00ff00',
-    minDuration: 3,
-    pullPowerThreshold: 290,
-    maxHistoryLength: 10
+    minDuration: defaultMinDuration,
+    pullPowerThreshold: defaultPullPowerThreshold
 });
 
 let overlayMode;
@@ -41,8 +43,8 @@ let wasPulling;
 let currentAthlete;
 let maxHistoryLength = 10;
 let pullDraftTable;
-let minDuration = 3;
-let pullPowerThreshold = 0;
+let minDuration = defaultMinDuration;
+let pullPowerThreshold = defaultPullPowerThreshold;
 
 function initHistoryTable() {
     pullDraftTable = document.getElementById("pullDraftTable");
@@ -158,7 +160,6 @@ export async function main() {
 
     minDuration = common.settingsStore.get('minDuration') ?? minDuration;
     pullPowerThreshold = common.settingsStore.get('pullPowerThreshold') ?? pullPowerThreshold;
-    maxHistoryLength = common.settingsStore.get('maxHistoryLength') ?? maxHistoryLength;
 
     const gcs = await common.rpc.getGameConnectionStatus();
 
@@ -184,9 +185,6 @@ export async function main() {
         }
         if (changed.has('pullPowerThreshold')) {
             pullPowerThreshold = changed.get('pullPowerThreshold');
-        }
-        if (changed.has('maxHistoryLength')) {
-            maxHistoryLength = changed.get('maxHistoryLength');
         }
         render();
     });
