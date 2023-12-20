@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="settings-page" tabindex="0" data-settings-key="alenljung-pull-duration-settings-v4">
+<html lang="en" class="settings-page" tabindex="0" data-settings-key="alenljung-pull-duration-settings-v7">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.5"/>
@@ -50,6 +50,18 @@
                 <label>
                     <key>Pull power threshold (W):</key>
                     <input type="number" name="pullPowerThreshold" min="0" max="10000000" step="10"/>
+                </label>
+                <label>
+                    <key>Show accumulated statistics:</key>
+                    <input type="checkbox" name="showAccumulatedStatistics"/>
+                </label>
+                <label>
+                    <key>Show W/kg instead of W:</key>
+                    <input type="checkbox" name="showWkg"/>
+                </label>
+                <label>
+                    <key>Hide unit (W or W/kg)</key>
+                    <input type="checkbox" name="hideUnit"/>
                 </label>
             </form>
         </div>

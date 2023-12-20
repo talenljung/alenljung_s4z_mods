@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" tabindex="0" data-settings-key="alenljung-pull-duration-settings-v4">
+<html lang="en" tabindex="0" data-settings-key="alenljung-pull-duration-settings-v7">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -33,6 +33,10 @@
                 font-size: calc(2rem + 40vw);
                 font-weight: 800;
             }
+            #pullDraftTable
+            {
+                border-collapse: collapse;
+            }
             td.current
             {
                 text-align: center;
@@ -42,6 +46,12 @@
             {
                 text-align: center;
                 font-size: smaller;
+            }
+            td.accumDuration
+            {
+                text-align: center;
+                font-size: smaller;
+                font-style: italic;
             }
         </style>
         <link id="favicon" rel="shortcut icon" href="../../../../images/favicon.png"/>
@@ -54,7 +64,7 @@
                 <div class="buttons">
                     <div class="button reset" title="Reset">Reset</div>
                     <a class="button open-settings" href="./pull-duration-settings.html?width=380&height=720&child-window"
-                    title="Open settings window" target="gradient-settings"><ms>settings</ms></a>                    
+                    title="Open settings window" target="gradient-settings"><ms>settings</ms></a>
                     <div title="Minimize" class="button minimize electron-only"><ms>minimize</ms></div>
                     <div title="Close this window" class="button close electron-only"><ms>close</ms></div>
                 </div>
