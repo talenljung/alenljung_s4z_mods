@@ -9,7 +9,7 @@ const num = H.number;
 const page = location.pathname.split('/').at(-1).split('.')[0];
 
 const defaultPullPowerThreshold = 0;
-const defaultMinDuration = 5;
+const defaultMinDuration = 7;
 const defaultShowAccumulatedStatistics = false;
 const defaultShowWkg = false;
 const defaultHideUnit = false;
@@ -48,7 +48,7 @@ let isPulling = false;
 let wasPulling;
 let currentAthlete;
 let athleteWeight;
-let maxHistoryLength = 10;
+let maxHistoryLength = 20;
 let pullDraftTable;
 let accumulatedDurationRow;
 let minDuration = defaultMinDuration;
