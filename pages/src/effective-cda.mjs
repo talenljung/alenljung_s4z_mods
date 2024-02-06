@@ -1,5 +1,6 @@
 import * as sauce from '/pages/src/../../shared/sauce/index.mjs';
 import * as common from '/pages/src/common.mjs';
+import crrDbJson from './crr.json' assert { type: 'json' };
 
 const doc = document.documentElement;
 const L = sauce.locale;
@@ -76,6 +77,32 @@ const g = 9.81;
 
 var selectedBike = Object.keys(bikeData)[0];
 var cdaAverageWindowSizeMs = defaultCdaAverageWindowSizeMs;
+
+function getSurface(courseId, roadId, roadCompletion, isReverse) {
+    if (courseId in crrDbJson.roads && roadId in crrDbJson.roads[courseId])
+    {
+        const currentProgress = (isReverse ? 1000000 - roadCompletion : roadCompletion) / 1000000
+        const roadData = crrDbJson.roads[courseId][roadId];
+        const progresses = Object.keys(roadData);
+        for (const [p, surface] of Object.entries(roadData)) {
+            if (currentProgress <= p) {
+                return surface;
+            }
+        }
+        return roadData[progresses[progresses.length - 1]];
+    }
+    return undefined;
+}
+
+function getCrr(courseId, roadId, roadCompletion, isReverse, tyreType) {
+    const surface = getSurface(courseId, roadId, roadCompletion, isReverse)
+    return crrDbJson.surfaces[surface ?? 'pavement_sand'][tyreType];
+}
+
+function getSurfaceAndCrr(courseId, roadId, roadCompletion, isReverse, tyreType) {
+    const surface = getSurface(courseId, roadId, roadCompletion, isReverse)
+    return [surface, crrDbJson.surfaces[surface ?? 'pavement_sand'][tyreType]];
+}
 
 function effectiveCda(height, riderWeight, bikeWeight, pwr, newSpeedKmH, prevSpeedKmH, timeDeltaS, inclinePercent, crr) {
   const weight = riderWeight + bikeWeight;
@@ -196,7 +223,7 @@ export async function main() {
         const riderWeight = watching.athlete.weight
         const bikeWeight = bikeData[selectedBike].weight + extraWeight;
         const height = watching.athlete.height
-        const crr = bikeData[selectedBike].crr;
+        const [surface, crr] = getSurfaceAndCrr(watching.state.courseId, watching.state.roadId, watching.state.roadCompletion, watching.state.reverse, "road");
         const powerToUse = deltaTimeMs > 300 ? watching.state.power : powerOld;
         const cda = effectiveCda(height, riderWeight, bikeWeight, powerToUse, speedKph, speedKphOld, deltaTimeMs/1000, gradientPercentHistory[gradientPercentHistory.length-2], crr);
         cdaHistory.push(cda);
@@ -210,6 +237,7 @@ export async function main() {
         console.debug(logarray)
         if (page == 'effective-cda') {
             document.getElementById('act_cda').innerHTML = formatcda(cdaAverage);
+            document.getElementById('act_crr').innerHTML = `${(surface ?? 'Unknown').replace('_', '/')} ${crr}`;
         }
         timeOld = time;
         speedKphOld = speedKph;
