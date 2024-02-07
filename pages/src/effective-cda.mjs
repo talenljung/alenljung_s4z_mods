@@ -11,22 +11,22 @@ let gameConnection;
 const page = location.pathname.split('/').at(-1).split('.')[0];
 
 const bikeData = {
-    "Canyon Aeroad 2021, DT Swiss ARC 1100 DICUT DISC": { weight: 6.326516434, crr: 0.004},
-    "Pinarello Dogma F, DT Swiss ARC 1100 DICUT DISC": { weight: 6.111778897, crr: 0.004},
-    "Scott Addict RC, DT Swiss ARC 1100 DICUT DISC": { weight: 5.969539361, crr: 0.004},
-    "Scott Addict RC, ENVE SES 7.8": { weight: 5.551463039, crr: 0.004},
-    "Specialized Aethos S-Works, DT Swiss ARC 1100 DICUT 62": { weight: 5.20017971, crr: 0.004},
-    "Specialized Aethos S-Works, Lightweight Meilenstein": { weight: 4.773019002, crr: 0.004},
-    "Specialized Venge S-Works, DT Swiss ARC 1100 DICUT DISC": { weight: 6.392870542, crr: 0.004},
-    "Zwift Concept Z1 (Tron)": { weight: 5.841040875, crr: 0.004},
-    "Gravel: Canyon Grail, ENVE G23": { weight: 6.295709214, crr: 0.008},
-    "Gravel: Specialized Crux, Cadex AR 35": { weight: 6.376319988, crr: 0.008},
-    "Gravel: Specialized Crux, ENVE G23": { weight: 6.180817163, crr: 0.008},
-    "TT: Cadex Tri, DT Swiss ARC 1100 DICUT DISC": { weight: 8.731950421, crr: 0.004},
-    "TT: Canyon Speedmax CF SLX Disc, DT Swiss ARC 1100 DICUT DISC": { weight: 8.777536839, crr: 0.004},
-    "TT: Canyon Speedmax CF SLX Disc, ENVE SES 7.8": { weight: 8.307936447, crr: 0.004},
-    "TT: Scott Plasma RC Ultimate, DT Swiss ARC 1100 DICUT DISC": { weight: 8.569863648, crr: 0.004},
-    "MTB: Trek Super Caliber": { weight: 11.5578441, crr: 0.01},
+    "Canyon Aeroad 2021, DT Swiss ARC 1100 DICUT DISC": { weight: 6.326516434, tyreType: 'road'},
+    "Pinarello Dogma F, DT Swiss ARC 1100 DICUT DISC": { weight: 6.111778897, tyreType: 'road'},
+    "Scott Addict RC, DT Swiss ARC 1100 DICUT DISC": { weight: 5.969539361, tyreType: 'road'},
+    "Scott Addict RC, ENVE SES 7.8": { weight: 5.551463039, tyreType: 'road'},
+    "Specialized Aethos S-Works, DT Swiss ARC 1100 DICUT 62": { weight: 5.20017971, tyreType: 'road'},
+    "Specialized Aethos S-Works, Lightweight Meilenstein": { weight: 4.773019002, tyreType: 'road'},
+    "Specialized Venge S-Works, DT Swiss ARC 1100 DICUT DISC": { weight: 6.392870542, tyreType: 'road'},
+    "Zwift Concept Z1 (Tron)": { weight: 5.841040875, tyreType: 'road'},
+    "Gravel: Canyon Grail, ENVE G23": { weight: 6.295709214, tyreType: 'gravel'},
+    "Gravel: Specialized Crux, Cadex AR 35": { weight: 6.376319988, tyreType: 'gravel'},
+    "Gravel: Specialized Crux, ENVE G23": { weight: 6.180817163, tyreType: 'gravel'},
+    "TT: Cadex Tri, DT Swiss ARC 1100 DICUT DISC": { weight: 8.731950421, tyreType: 'road'},
+    "TT: Canyon Speedmax CF SLX Disc, DT Swiss ARC 1100 DICUT DISC": { weight: 8.777536839, tyreType: 'road'},
+    "TT: Canyon Speedmax CF SLX Disc, ENVE SES 7.8": { weight: 8.307936447, tyreType: 'road'},
+    "TT: Scott Plasma RC Ultimate, DT Swiss ARC 1100 DICUT DISC": { weight: 8.569863648, tyreType: 'road'},
+    "MTB: Trek Super Caliber": { weight: 11.5578441, tyreType: 'mtb'},
     };
 
 const defaultCdaAverageWindowSizeMs = 3000;
@@ -223,7 +223,7 @@ export async function main() {
         const riderWeight = watching.athlete.weight
         const bikeWeight = bikeData[selectedBike].weight + extraWeight;
         const height = watching.athlete.height
-        const [surface, crr] = getSurfaceAndCrr(watching.state.courseId, watching.state.roadId, watching.state.roadCompletion, watching.state.reverse, "road");
+        const [surface, crr] = getSurfaceAndCrr(watching.state.courseId, watching.state.roadId, watching.state.roadCompletion, watching.state.reverse, bikeData[selectedBike].tyreType);
         const powerToUse = deltaTimeMs > 300 ? watching.state.power : powerOld;
         const cda = effectiveCda(height, riderWeight, bikeWeight, powerToUse, speedKph, speedKphOld, deltaTimeMs/1000, gradientPercentHistory[gradientPercentHistory.length-2], crr);
         cdaHistory.push(cda);
