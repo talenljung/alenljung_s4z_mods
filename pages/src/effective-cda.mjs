@@ -83,13 +83,18 @@ function getSurface(courseId, roadId, roadCompletion, isReverse) {
     {
         const currentProgress = (isReverse ? 1000000 - roadCompletion : roadCompletion) / 1000000
         const roadData = crrDbJson.roads[courseId][roadId];
-        const progresses = Object.keys(roadData);
-        for (const [p, surface] of Object.entries(roadData)) {
-            if (currentProgress <= p) {
-                return surface;
+        let prevProgress = undefined;
+        for (const progress of Object.keys(roadData)) {
+            if (currentProgress <= progress) {
+                if (prevProgress == undefined || currentProgress > (progress + prevProgress) / 2) {
+                    return roadData[progress];
+                } else {
+                    return roadData[prevProgress];
+                }
             }
+            prevProgress = progress;
         }
-        return roadData[progresses[progresses.length - 1]];
+        return roadData[prevProgress];
     }
     return undefined;
 }
