@@ -303,7 +303,7 @@
             },
             "78": {
                 "0.29249": "pavement_sand",
-                "0.6832": "pavement_sand"
+                "0.91383": "pavement_sand"
             },
             "79": {
                 "0.04724": "dirt",
@@ -471,6 +471,10 @@
                 "0.63886": "wood",
                 "0.63887": "pavement_sand",
                 "0.99745": "pavement_sand"
+            },
+            "154": {
+                "0.00987": "pavement_sand",
+                "0.91341": "pavement_sand"
             },
             "155": {
                 "0.18663": "pavement_sand",
@@ -649,6 +653,28 @@
             "0": {
                 "0.0": "pavement_sand",
                 "1.0": "pavement_sand"
+            }
+        },
+        "12": {
+            "0": {
+                "7e-05": "pavement_sand",
+                "0.05534": "pavement_sand",
+                "0.05535": "brick_cobbles",
+                "0.15914": "brick_cobbles",
+                "0.15916": "pavement_sand",
+                "0.99995": "pavement_sand"
+            },
+            "17": {
+                "0.1927": "pavement_sand",
+                "0.43957": "pavement_sand"
+            },
+            "18": {
+                "0.2373": "pavement_sand",
+                "0.69133": "pavement_sand"
+            },
+            "19": {
+                "0.55886": "pavement_sand",
+                "0.83508": "pavement_sand"
             }
         },
         "13": {
