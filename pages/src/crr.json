@@ -99,6 +99,7 @@
                 "0.56897": "wood",
                 "0.56898": "dirt",
                 "0.60674": "dirt",
+                "0.60675": "pavement_sand",
                 "0.60676": "pavement_sand",
                 "0.60677": "wood",
                 "0.6304": "wood",
@@ -130,8 +131,8 @@
                 "0.76021": "pavement_sand"
             },
             "5": {
-                "0.02955": "pavement_sand",
-                "0.98882": "pavement_sand"
+                "0.0294": "pavement_sand",
+                "0.98897": "pavement_sand"
             },
             "6": {
                 "0.00076": "pavement_sand",
@@ -164,6 +165,10 @@
             "13": {
                 "0.1029": "pavement_sand",
                 "0.86557": "pavement_sand"
+            },
+            "14": {
+                "0.05677": "pavement_sand",
+                "0.50778": "pavement_sand"
             },
             "15": {
                 "0.04778": "ice_snow",
@@ -296,7 +301,7 @@
                 "0.82775": "dirt"
             },
             "77": {
-                "0.02955": "wood",
+                "0.02949": "wood",
                 "0.11047": "wood",
                 "0.11054": "pavement_sand",
                 "0.94754": "pavement_sand"
@@ -423,6 +428,14 @@
                 "0.74781": "brick_cobbles",
                 "0.74787": "dirt",
                 "0.88932": "dirt"
+            },
+            "135": {
+                "0.00181": "pavement_sand",
+                "0.97142": "pavement_sand"
+            },
+            "141": {
+                "0.20735": "pavement_sand",
+                "0.99423": "pavement_sand"
             },
             "145": {
                 "0.042": "wood",
@@ -619,13 +632,11 @@
         },
         "9": {
             "0": {
-                "0.03593": "brick_cobbles",
                 "0.48318": "pavement_sand",
-                "0.94104": "brick_cobbles",
                 "0.96618": "pavement_sand"
             },
             "7": {
-                "1e-05": "pavement_sand",
+                "0.0": "pavement_sand",
                 "0.9421": "pavement_sand",
                 "0.94211": "brick_cobbles",
                 "0.96472": "brick_cobbles",
@@ -636,12 +647,16 @@
                 "0.25745": "pavement_sand",
                 "0.88445": "pavement_sand"
             },
+            "11": {
+                "0.26596": "pavement_sand",
+                "0.73138": "pavement_sand"
+            },
             "13": {
-                "0.29003": "pavement_sand",
+                "0.28974": "pavement_sand",
                 "0.97068": "pavement_sand"
             },
             "14": {
-                "0.02685": "pavement_sand",
+                "0.02669": "pavement_sand",
                 "0.84458": "pavement_sand"
             },
             "36": {
