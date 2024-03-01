@@ -1,6 +1,7 @@
 import * as sauce from '/pages/src/../../shared/sauce/index.mjs';
 import * as common from '/pages/src/common.mjs';
 import crrDbJson from './crr.json' assert { type: 'json' };
+import bikesDbJson from './bikes.json' assert { type: 'json' };
 
 const doc = document.documentElement;
 const L = sauce.locale;
@@ -188,7 +189,11 @@ export async function main() {
     let powerOld = null;
     const gradientAverageWindowSizeMs = 500;
     const historyLength = 200;
-    const extraWeight = 0.2;
+    let bikeFrameId = undefined;
+    let bikeFrontWheelId = undefined;
+    let bikeRearWheelId = undefined;
+    let bikeWeightFromStream = undefined;
+    let bikeTypeFromStream = undefined;
     common.subscribe('athlete/watching', watching => {
         if (watching.athleteId !== athleteId) {
             athleteId = watching.athleteId;
@@ -199,6 +204,29 @@ export async function main() {
             timeOld = null;
             speedKphOld = null;
             powerOld = null;
+        }
+        if (watching.athlete.bikeFrame && watching.athlete.bikeWheelFront && watching.athlete.bikeWheelRear && 
+            (watching.athlete.bikeFrame != bikeFrameId || watching.athlete.bikeWheelFront != bikeFrontWheelId || watching.athlete.bikeWheelRear != bikeRearWheelId)) {
+            bikeFrameId = watching.athlete.bikeFrame;
+            const bikeFrame = bikesDbJson.frames[bikeFrameId];
+            bikeFrontWheelId = watching.athlete.bikeWheelFront;
+            bikeRearWheelId = watching.athlete.bikeWheelRear;
+            let frontWheel = bikesDbJson.frontWheels[bikeFrontWheelId];
+            let rearWheel = bikesDbJson.rearWheels[bikeRearWheelId];
+            if (bikeFrame && frontWheel && rearWheel) {
+                if (bikeFrame.wheelType != frontWheel.wheelType || bikeFrame.wheelType != rearWheel.wheelType) {
+                    const overrideFrontWheelId = bikesDbJson.defaultWheels[bikeFrame.wheelType].front;
+                    const overrideRearWheelId = bikesDbJson.defaultWheels[bikeFrame.wheelType].rear;
+                    frontWheel = bikesDbJson.frontWheels[overrideFrontWheelId];
+                    rearWheel = bikesDbJson.rearWheels[overrideRearWheelId];
+                }
+                bikeWeightFromStream = (bikeFrame.weight + frontWheel.weight + rearWheel.weight)/1000.0 + bikesDbJson.reference.weightOffset;
+                bikeTypeFromStream = bikeFrame.type;
+                console.info(`frame=${bikeFrameId} ${bikeFrame.fullName}, frontWheel=${bikeFrontWheelId} ${frontWheel.fullName}, rearWheel=${bikeRearWheelId} ${rearWheel.fullName}, weight=${bikeWeightFromStream}`);
+            } else {
+                bikeWeightFromStream = undefined;
+                bikeTypeFromStream = undefined;
+            }
         }
         const altitude = watching.state.altitude;
         const time = watching.state.worldTime;
@@ -226,9 +254,10 @@ export async function main() {
         const gradientPercentAverage = timeWindowAverage(gradientPercentHistory, deltaTimeMsHistory, gradientAverageWindowSizeMs);
 
         const riderWeight = watching.athlete.weight
-        const bikeWeight = bikeData[selectedBike].weight + extraWeight;
+        const bikeWeight = bikeWeightFromStream ?? (bikeData[selectedBike].weight + bikesDbJson.reference.weightOffset);
+        const bikeType = bikeTypeFromStream ?? bikeData[selectedBike].tyreType;
         const height = watching.athlete.height
-        const [surface, crr] = getSurfaceAndCrr(watching.state.courseId, watching.state.roadId, watching.state.roadCompletion, watching.state.reverse, bikeData[selectedBike].tyreType);
+        const [surface, crr] = getSurfaceAndCrr(watching.state.courseId, watching.state.roadId, watching.state.roadCompletion, watching.state.reverse, bikeType);
         const powerToUse = deltaTimeMs > 300 ? watching.state.power : powerOld;
         const cda = effectiveCda(height, riderWeight, bikeWeight, powerToUse, speedKph, speedKphOld, deltaTimeMs/1000, gradientPercentHistory[gradientPercentHistory.length-2], crr);
         cdaHistory.push(cda);

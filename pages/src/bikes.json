@@ -1,0 +1,2084 @@
+{
+    "frames": {
+        "431820725": {
+            "make": "Allied",
+            "model": "Able",
+            "fullName": "Allied Able",
+            "year": "2021",
+            "cda": 0.0,
+            "weight": 4855.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "2985335789": {
+            "make": "BMC",
+            "model": "Roadmachine",
+            "fullName": "BMC Roadmachine",
+            "year": "2021",
+            "cda": 0.0,
+            "weight": 4580.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "389045293": {
+            "make": "BMC",
+            "model": "SLR01",
+            "fullName": "BMC SLR01",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 4220.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3868468027": {
+            "make": "BMC",
+            "model": "TeamMachine",
+            "fullName": "BMC TeamMachine",
+            "year": "2022",
+            "cda": -0.001,
+            "weight": 4220.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3373750102": {
+            "make": "BMC",
+            "model": "Timemachine01",
+            "fullName": "BMC Timemachine01",
+            "year": "2015",
+            "cda": -0.03,
+            "weight": 6820.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3928995152": {
+            "make": "Bridgestone",
+            "model": "Anchor RS9s",
+            "fullName": "Bridgestone Anchor RS9s",
+            "year": "2021",
+            "cda": 0.0,
+            "weight": 3900.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3402382031": {
+            "make": "Cadex",
+            "model": "Tri",
+            "fullName": "Cadex Tri",
+            "year": "2022",
+            "cda": -0.036,
+            "weight": 6730.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3943092814": {
+            "make": "Cannondale",
+            "model": "CAAD12",
+            "fullName": "Cannondale CAAD12",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 4960.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1532698216": {
+            "make": "Cannondale",
+            "model": "EVO",
+            "fullName": "Cannondale EVO",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 3820.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "529764489": {
+            "make": "Cannondale",
+            "model": "Super Six Evo",
+            "fullName": "Cannondale Super Six Evo",
+            "year": "2020",
+            "cda": -0.001,
+            "weight": 4140.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2059853947": {
+            "make": "Cannondale",
+            "model": "Synapse",
+            "fullName": "Cannondale Synapse",
+            "year": "2018",
+            "cda": 0.0,
+            "weight": 4460.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2005280203": {
+            "make": "Cannondale",
+            "model": "System Six",
+            "fullName": "Cannondale System Six",
+            "year": "2019",
+            "cda": -0.0046,
+            "weight": 4949.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3985977100": {
+            "make": "Canyon",
+            "model": "Aeroad 2021",
+            "fullName": "Canyon Aeroad 2021",
+            "year": "2021",
+            "cda": -0.0042,
+            "weight": 4250.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "390579581": {
+            "make": "Canyon",
+            "model": "Aeroad Team Edition",
+            "fullName": "Canyon Aeroad Team Edition",
+            "year": "2021",
+            "cda": -0.0042,
+            "weight": 4250.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1381140630": {
+            "make": "Canyon",
+            "model": "Grail",
+            "fullName": "Canyon Grail",
+            "year": "2019",
+            "cda": -0.0005,
+            "weight": 4530.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "1756027350": {
+            "make": "Canyon",
+            "model": "Inflite",
+            "fullName": "Canyon Inflite",
+            "year": "2019",
+            "cda": 0.0,
+            "weight": 5430.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "1592822481": {
+            "make": "Canyon",
+            "model": "Lux",
+            "fullName": "Canyon Lux",
+            "year": "2019",
+            "cda": 0.0015,
+            "weight": 9355.0,
+            "type": "mtb",
+            "wheelType": "mtb"
+        },
+        "790618803": {
+            "make": "Canyon",
+            "model": "Speedmax",
+            "fullName": "Canyon Speedmax",
+            "year": "2015",
+            "cda": -0.03,
+            "weight": 6820.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2513788321": {
+            "make": "Canyon",
+            "model": "Speedmax CF SLX Disc",
+            "fullName": "Canyon Speedmax CF SLX Disc",
+            "year": "2021",
+            "cda": -0.035,
+            "weight": 6780.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3483005256": {
+            "make": "Canyon",
+            "model": "Speedmax Team Edition",
+            "fullName": "Canyon Speedmax Team Edition",
+            "year": "2015",
+            "cda": -0.03,
+            "weight": 6820.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1806040170": {
+            "make": "Canyon",
+            "model": "Ultimate",
+            "fullName": "Canyon Ultimate",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 3970.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1675779900": {
+            "make": "Canyon",
+            "model": "Ultimate CFR",
+            "fullName": "Canyon Ultimate CFR",
+            "year": "2021",
+            "cda": 0.0,
+            "weight": 3960.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2884593499": {
+            "make": "Canyon",
+            "model": "Ultimate Generation",
+            "fullName": "Canyon Ultimate Generation",
+            "year": "2022",
+            "cda": 0.0,
+            "weight": 3960.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2943880629": {
+            "make": "Cello",
+            "model": "Team",
+            "fullName": "Cello Team",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 4105.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3583022399": {
+            "make": "Cervelo",
+            "model": "Aspero",
+            "fullName": "Cervelo Aspero",
+            "year": "2020",
+            "cda": -0.0015,
+            "weight": 4980.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "3932292289": {
+            "make": "Cervelo",
+            "model": "P5",
+            "fullName": "Cervelo P5",
+            "year": "2015",
+            "cda": -0.032,
+            "weight": 6580.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "123106780": {
+            "make": "Cervelo",
+            "model": "PX-Series",
+            "fullName": "Cervelo PX-Series",
+            "year": "2017",
+            "cda": -0.034,
+            "weight": 6820.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "106535518": {
+            "make": "Cervelo",
+            "model": "R5",
+            "fullName": "Cervelo R5",
+            "year": "2016",
+            "cda": 0.0,
+            "weight": 4020.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "4048415486": {
+            "make": "Cervelo",
+            "model": "S3D",
+            "fullName": "Cervelo S3D",
+            "year": "2015",
+            "cda": -0.0035,
+            "weight": 5155.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1972610461": {
+            "make": "Cervelo",
+            "model": "S5 2020",
+            "fullName": "Cervelo S5 2020",
+            "year": "2021",
+            "cda": -0.0047,
+            "weight": 4480.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1936733870": {
+            "make": "Chapter2",
+            "model": "KOKO",
+            "fullName": "Chapter2 KOKO",
+            "year": "2022",
+            "cda": -0.0005,
+            "weight": 4280.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2668672480": {
+            "make": "Chapter2",
+            "model": "Rere",
+            "fullName": "Chapter2 Rere",
+            "year": "2019",
+            "cda": -0.002,
+            "weight": 4770.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2439776613": {
+            "make": "Chapter2",
+            "model": "Tere",
+            "fullName": "Chapter2 Tere",
+            "year": "2019",
+            "cda": 0.0,
+            "weight": 4020.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1174020494": {
+            "make": "Chapter2",
+            "model": "TOA",
+            "fullName": "Chapter2 TOA",
+            "year": "2021",
+            "cda": -0.004,
+            "weight": 4280.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3628259811": {
+            "make": "Colnago",
+            "model": "V3RS",
+            "fullName": "Colnago V3RS",
+            "year": "2020",
+            "cda": 0.0,
+            "weight": 4460.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3998075483": {
+            "make": "Cube",
+            "model": "Aerium",
+            "fullName": "Cube Aerium",
+            "year": "2019",
+            "cda": -0.03,
+            "weight": 6780.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1767548815": {
+            "make": "Cube",
+            "model": "Litening",
+            "fullName": "Cube Litening",
+            "year": "2018",
+            "cda": 0.0,
+            "weight": 4070.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1703496698": {
+            "make": "Cube",
+            "model": "Litening C:68X",
+            "fullName": "Cube Litening C:68X",
+            "year": "2021",
+            "cda": 0.0,
+            "weight": 3980.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "206931035": {
+            "make": "DiamondBack",
+            "model": "Andean",
+            "fullName": "DiamondBack Andean",
+            "year": "2017",
+            "cda": -0.03,
+            "weight": 6680.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3469325930": {
+            "make": "Factor",
+            "model": "One",
+            "fullName": "Factor One",
+            "year": "2020",
+            "cda": -0.0033,
+            "weight": 4980.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3002729519": {
+            "make": "Felt",
+            "model": "AR",
+            "fullName": "Felt AR",
+            "year": "2018",
+            "cda": -0.0047,
+            "weight": 4355.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3660740142": {
+            "make": "Felt",
+            "model": "FR",
+            "fullName": "Felt FR",
+            "year": "2022",
+            "cda": -0.001,
+            "weight": 4130.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1433973142": {
+            "make": "Felt",
+            "model": "IA",
+            "fullName": "Felt IA",
+            "year": "2019",
+            "cda": -0.034,
+            "weight": 6820.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "11394848": {
+            "make": "Felt",
+            "model": "IA 2.0",
+            "fullName": "Felt IA 2.0",
+            "year": "2021",
+            "cda": -0.034,
+            "weight": 6550.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3867639546": {
+            "make": "Focus",
+            "model": "Izalco Max",
+            "fullName": "Focus Izalco Max",
+            "year": "2020",
+            "cda": -0.0036,
+            "weight": 4480.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "103914490": {
+            "make": "Giant",
+            "model": "Propel Advanced SL Disc",
+            "fullName": "Giant Propel Advanced SL Disc",
+            "year": "2018",
+            "cda": -0.0038,
+            "weight": 4620.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2360271970": {
+            "make": "Giant",
+            "model": "Revolt Advanced Pro",
+            "fullName": "Giant Revolt Advanced Pro",
+            "year": "2022",
+            "cda": -0.0005,
+            "weight": 5085.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "2205705045": {
+            "make": "Giant",
+            "model": "TCR Advanced SL",
+            "fullName": "Giant TCR Advanced SL",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 4160.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2583787351": {
+            "make": "Giant",
+            "model": "TCR BikeExchange-Jayco Team",
+            "fullName": "Giant TCR BikeExchange-Jayco Team",
+            "year": "2021",
+            "cda": -0.001,
+            "weight": 4730.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3787085621": {
+            "make": "Lauf",
+            "model": "True Grit Bike",
+            "fullName": "Lauf True Grit Bike",
+            "year": "2021",
+            "cda": 0.0,
+            "weight": 5530.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "2162282312": {
+            "make": "Liv",
+            "model": "Devote Advanced Pro",
+            "fullName": "Liv Devote Advanced Pro",
+            "year": "2021",
+            "cda": -0.0005,
+            "weight": 5085.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "3495124341": {
+            "make": "Liv",
+            "model": "Langma Advanced SL",
+            "fullName": "Liv Langma Advanced SL",
+            "year": "2018",
+            "cda": 0.0,
+            "weight": 4160.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "57842352": {
+            "make": "Liv",
+            "model": "Langma SL Advanced Disc",
+            "fullName": "Liv Langma SL Advanced Disc",
+            "year": "2021",
+            "cda": -0.001,
+            "weight": 4280.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3033010663": {
+            "make": "Merida",
+            "model": "Scultura",
+            "fullName": "Merida Scultura",
+            "year": "2020",
+            "cda": -0.0015,
+            "weight": 4420.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1874220070": {
+            "make": "Moots",
+            "model": "Vamoots RCS",
+            "fullName": "Moots Vamoots RCS",
+            "year": "2021",
+            "cda": 0.0,
+            "weight": 5230.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1821736990": {
+            "make": "Mosaic",
+            "model": "RT-1d",
+            "fullName": "Mosaic RT-1d",
+            "year": "2022",
+            "cda": 0.0,
+            "weight": 5230.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1000176255": {
+            "make": "Parlee",
+            "model": "ESX",
+            "fullName": "Parlee ESX",
+            "year": "2015",
+            "cda": -0.001,
+            "weight": 4620.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2699673850": {
+            "make": "Parlee",
+            "model": "RZ7",
+            "fullName": "Parlee RZ7",
+            "year": "2020",
+            "cda": -0.0025,
+            "weight": 4840.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3367169312": {
+            "make": "Pinarello",
+            "model": "Bolide",
+            "fullName": "Pinarello Bolide",
+            "year": "2015",
+            "cda": -0.03,
+            "weight": 7070.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3920433954": {
+            "make": "Pinarello",
+            "model": "Bolide TT",
+            "fullName": "Pinarello Bolide TT",
+            "year": "2018",
+            "cda": -0.03,
+            "weight": 7120.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2373108361": {
+            "make": "Pinarello",
+            "model": "Dogma 65.1",
+            "fullName": "Pinarello Dogma 65.1",
+            "year": "2015",
+            "cda": -0.001,
+            "weight": 5020.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "4208139356": {
+            "make": "Pinarello",
+            "model": "Dogma F",
+            "fullName": "Pinarello Dogma F",
+            "year": "2021",
+            "cda": -0.0035,
+            "weight": 4130.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3186772618": {
+            "make": "Pinarello",
+            "model": "Dogma F10",
+            "fullName": "Pinarello Dogma F10",
+            "year": "2019",
+            "cda": -0.0025,
+            "weight": 4390.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "430380910": {
+            "make": "Pinarello",
+            "model": "Dogma F12",
+            "fullName": "Pinarello Dogma F12",
+            "year": "2020",
+            "cda": -0.0033,
+            "weight": 4440.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "833740600": {
+            "make": "Pinarello",
+            "model": "F8",
+            "fullName": "Pinarello F8",
+            "year": "2015",
+            "cda": -0.001,
+            "weight": 4460.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1152794347": {
+            "make": "QuintanaRoo",
+            "model": "Quintana Roo V-PR",
+            "fullName": "QuintanaRoo Quintana Roo V-PR",
+            "year": "2022",
+            "cda": -0.03,
+            "weight": 6780.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3247466139": {
+            "make": "Ribble",
+            "model": "Endurance",
+            "fullName": "Ribble Endurance",
+            "year": "2019",
+            "cda": -0.0025,
+            "weight": 4970.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "988819017": {
+            "make": "Ridley",
+            "model": "Helium",
+            "fullName": "Ridley Helium",
+            "year": "2018",
+            "cda": 0.0,
+            "weight": 4570.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "4288910569": {
+            "make": "Ridley",
+            "model": "Noah Fast 2019",
+            "fullName": "Ridley Noah Fast 2019",
+            "year": "2019",
+            "cda": -0.0033,
+            "weight": 4940.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "4100131524": {
+            "make": "Scott",
+            "model": "Addict RC",
+            "fullName": "Scott Addict RC",
+            "year": "2021",
+            "cda": -0.003,
+            "weight": 4015.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1315158373": {
+            "make": "Scott",
+            "model": "Foil",
+            "fullName": "Scott Foil",
+            "year": "2015",
+            "cda": -0.002,
+            "weight": 4420.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "43434703": {
+            "make": "Scott",
+            "model": "Foil 2023",
+            "fullName": "Scott Foil 2023",
+            "year": "2022",
+            "cda": -0.0038,
+            "weight": 4570.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "601769019": {
+            "make": "Scott",
+            "model": "Plasma",
+            "fullName": "Scott Plasma",
+            "year": "2019",
+            "cda": -0.03,
+            "weight": 6530.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2002850191": {
+            "make": "Scott",
+            "model": "Plasma RC Ultimate",
+            "fullName": "Scott Plasma RC Ultimate",
+            "year": "2022",
+            "cda": -0.034,
+            "weight": 6530.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1254205148": {
+            "make": "Scott",
+            "model": "Spark RC",
+            "fullName": "Scott Spark RC",
+            "year": "2019",
+            "cda": 0.0015,
+            "weight": 9055.0,
+            "type": "mtb",
+            "wheelType": "mtb"
+        },
+        "3133382714": {
+            "make": "Scott",
+            "model": "Spark RC World Cup",
+            "fullName": "Scott Spark RC World Cup",
+            "year": "2022",
+            "cda": 0.0011,
+            "weight": 8805.0,
+            "type": "mtb",
+            "wheelType": "mtb"
+        },
+        "2346116422": {
+            "make": "Specialized",
+            "model": "Aethos S-Works",
+            "fullName": "Specialized Aethos S-Works",
+            "year": "2021",
+            "cda": 0.0,
+            "weight": 3780.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "4200057616": {
+            "make": "Specialized",
+            "model": "Allez",
+            "fullName": "Specialized Allez",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 5040.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2397946994": {
+            "make": "Specialized",
+            "model": "Allez Sprint",
+            "fullName": "Specialized Allez Sprint",
+            "year": "2019",
+            "cda": -0.0035,
+            "weight": 4440.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2044307781": {
+            "make": "Specialized",
+            "model": "Amira",
+            "fullName": "Specialized Amira",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 4160.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2662728556": {
+            "make": "Specialized",
+            "model": "Amira S-Works",
+            "fullName": "Specialized Amira S-Works",
+            "year": "",
+            "cda": 0.0,
+            "weight": 3980.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1639102673": {
+            "make": "Specialized",
+            "model": "Crux",
+            "fullName": "Specialized Crux",
+            "year": "2022",
+            "cda": 0.0,
+            "weight": 4480.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "1133663232": {
+            "make": "Specialized",
+            "model": "Diverge",
+            "fullName": "Specialized Diverge",
+            "year": "2022",
+            "cda": -5e-05,
+            "weight": 5380.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "940439989": {
+            "make": "Specialized",
+            "model": "Epic S-Works",
+            "fullName": "Specialized Epic S-Works",
+            "year": "2020",
+            "cda": 0.0015,
+            "weight": 9055.0,
+            "type": "mtb",
+            "wheelType": "mtb"
+        },
+        "166263359": {
+            "make": "Specialized",
+            "model": "Roubaix",
+            "fullName": "Specialized Roubaix",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 4611.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "807787291": {
+            "make": "Specialized",
+            "model": "Roubaix S-Works",
+            "fullName": "Specialized Roubaix S-Works",
+            "year": "",
+            "cda": 0.0,
+            "weight": 4611.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3914093169": {
+            "make": "Specialized",
+            "model": "Ruby",
+            "fullName": "Specialized Ruby",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 4611.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "785070754": {
+            "make": "Specialized",
+            "model": "Ruby S-Works",
+            "fullName": "Specialized Ruby S-Works",
+            "year": "",
+            "cda": 0.0,
+            "weight": 4611.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3772124007": {
+            "make": "Specialized",
+            "model": "Shiv",
+            "fullName": "Specialized Shiv",
+            "year": "2015",
+            "cda": -0.03,
+            "weight": 6680.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2460287610": {
+            "make": "Specialized",
+            "model": "Shiv Disc",
+            "fullName": "Specialized Shiv Disc",
+            "year": "2019",
+            "cda": -0.0335,
+            "weight": 6830.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1418783338": {
+            "make": "Specialized",
+            "model": "Shiv S-Works",
+            "fullName": "Specialized Shiv S-Works",
+            "year": "",
+            "cda": -0.03,
+            "weight": 6680.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2442494761": {
+            "make": "Specialized",
+            "model": "Tarmac",
+            "fullName": "Specialized Tarmac",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 4020.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2949471782": {
+            "make": "Specialized",
+            "model": "Tarmac Mixtape",
+            "fullName": "Specialized Tarmac Mixtape",
+            "year": "2015",
+            "cda": 0.0,
+            "weight": 4020.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2076241890": {
+            "make": "Specialized",
+            "model": "Tarmac Pro",
+            "fullName": "Specialized Tarmac Pro",
+            "year": "2019",
+            "cda": 0.0,
+            "weight": 3845.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "935373427": {
+            "make": "Specialized",
+            "model": "Tarmac SL7",
+            "fullName": "Specialized Tarmac SL7",
+            "year": "2021",
+            "cda": -0.001,
+            "weight": 4865.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1188190925": {
+            "make": "Specialized",
+            "model": "Tarmac SL7 SRAM",
+            "fullName": "Specialized Tarmac SL7 SRAM",
+            "year": "2021",
+            "cda": -0.001,
+            "weight": 4865.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "973848540": {
+            "make": "Specialized",
+            "model": "Venge",
+            "fullName": "Specialized Venge",
+            "year": "2015",
+            "cda": -0.0045,
+            "weight": 4895.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3523334161": {
+            "make": "Specialized",
+            "model": "Venge S-Works",
+            "fullName": "Specialized Venge S-Works",
+            "year": "2019",
+            "cda": -0.0048,
+            "weight": 4365.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "142926447": {
+            "make": "Trek",
+            "model": "Emonda",
+            "fullName": "Trek Emonda",
+            "year": "",
+            "cda": 0.0,
+            "weight": 3900.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1928137471": {
+            "make": "Trek",
+            "model": "Emonda SL",
+            "fullName": "Trek Emonda SL",
+            "year": "",
+            "cda": 0.0,
+            "weight": 4070.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "4129467727": {
+            "make": "Trek",
+            "model": "Madone",
+            "fullName": "Trek Madone",
+            "year": "2015",
+            "cda": -0.0047,
+            "weight": 4595.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "291034584": {
+            "make": "Trek",
+            "model": "Speed Concept SLR 9",
+            "fullName": "Trek Speed Concept SLR 9",
+            "year": "2021",
+            "cda": -0.034,
+            "weight": 7830.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "594642753": {
+            "make": "Trek",
+            "model": "Super Caliber",
+            "fullName": "Trek Super Caliber",
+            "year": "2020",
+            "cda": 0.0013,
+            "weight": 8855.0,
+            "type": "mtb",
+            "wheelType": "mtb"
+        },
+        "3078441697": {
+            "make": "Trek",
+            "model": "Team",
+            "fullName": "Trek Team",
+            "year": "",
+            "cda": 0.0,
+            "weight": 4560.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2132445842": {
+            "make": "Uranium",
+            "model": "Nuclear",
+            "fullName": "Uranium Nuclear",
+            "year": "2021",
+            "cda": -0.0047,
+            "weight": 4480.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2459800850": {
+            "make": "VanRysel",
+            "model": "EDR CF ",
+            "fullName": "VanRysel EDR CF ",
+            "year": "2021",
+            "cda": 0.0,
+            "weight": 4590.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "835142897": {
+            "make": "Ventum",
+            "model": "NS1",
+            "fullName": "Ventum NS1",
+            "year": "2022",
+            "cda": -0.003,
+            "weight": 4980.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2454550": {
+            "make": "Ventum",
+            "model": "One",
+            "fullName": "Ventum One",
+            "year": "2018",
+            "cda": -0.0315,
+            "weight": 7580.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3284970806": {
+            "make": "Zwift",
+            "model": "Aero",
+            "fullName": "Zwift Aero",
+            "year": "",
+            "cda": -0.003,
+            "weight": 4920.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "4150853780": {
+            "make": "Zwift",
+            "model": "Bat",
+            "fullName": "Zwift Bat",
+            "year": "",
+            "cda": 0.0,
+            "weight": 3930.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3079625256": {
+            "make": "Zwift",
+            "model": "BigWheel",
+            "fullName": "Zwift BigWheel",
+            "year": "",
+            "cda": 0.0,
+            "weight": 5880.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2130784714": {
+            "make": "Zwift",
+            "model": "Buffalo Fahrrad",
+            "fullName": "Zwift Buffalo Fahrrad",
+            "year": "2015",
+            "cda": 0.002,
+            "weight": 7490.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "427028396": {
+            "make": "Zwift",
+            "model": "Buffalo Qhubeka",
+            "fullName": "Zwift Buffalo Qhubeka",
+            "year": "2015",
+            "cda": 0.002,
+            "weight": 7490.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2106340733": {
+            "make": "Zwift",
+            "model": "Carbon",
+            "fullName": "Zwift Carbon",
+            "year": "",
+            "cda": 0.0,
+            "weight": 4910.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1456463855": {
+            "make": "Zwift",
+            "model": "Concept Z1",
+            "fullName": "Zwift Concept Z1",
+            "year": "2115",
+            "cda": -0.005,
+            "weight": 4590.0,
+            "type": "road",
+            "wheelType": "tron"
+        },
+        "1444415023": {
+            "make": "Zwift",
+            "model": "DefaultOrange",
+            "fullName": "Zwift DefaultOrange",
+            "year": "",
+            "cda": 0.0,
+            "weight": 3040.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "2654154998": {
+            "make": "Zwift",
+            "model": "Gravel",
+            "fullName": "Zwift Gravel",
+            "year": "2019",
+            "cda": 0.0,
+            "weight": 5480.0,
+            "type": "gravel",
+            "wheelType": "gravel"
+        },
+        "3814159195": {
+            "make": "Zwift",
+            "model": "Handcycle",
+            "fullName": "Zwift Handcycle",
+            "year": "",
+            "cda": -0.03,
+            "weight": 16830.0,
+            "type": "road",
+            "wheelType": "handcycle"
+        },
+        "385270250": {
+            "make": "Zwift",
+            "model": "Mountain",
+            "fullName": "Zwift Mountain",
+            "year": "2019",
+            "cda": 0.0035,
+            "weight": 9655.0,
+            "type": "mtb",
+            "wheelType": "mtb"
+        },
+        "3710262807": {
+            "make": "Zwift",
+            "model": "Safety",
+            "fullName": "Zwift Safety",
+            "year": "1885",
+            "cda": 0.0,
+            "weight": 5630.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "270803031": {
+            "make": "Zwift",
+            "model": "Skeletal",
+            "fullName": "Zwift Skeletal",
+            "year": "",
+            "cda": -0.004,
+            "weight": 3720.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "1029279076": {
+            "make": "Zwift",
+            "model": "Steel",
+            "fullName": "Zwift Steel",
+            "year": "2015",
+            "cda": 0.001,
+            "weight": 5720.0,
+            "type": "road",
+            "wheelType": "road"
+        },
+        "3572756959": {
+            "make": "Zwift",
+            "model": "TT",
+            "fullName": "Zwift TT",
+            "year": "",
+            "cda": -0.025,
+            "weight": 7080.0,
+            "type": "road",
+            "wheelType": "road"
+        }
+    },
+    "frontWheels": {
+        "702195190": {
+            "make": "Bontrager",
+            "model": "Aeolus5",
+            "fullName": "Bontrager Aeolus5",
+            "cda": -0.004,
+            "weight": 1015.0,
+            "wheelType": "road"
+        },
+        "2642167675": {
+            "make": "Cadex",
+            "model": "36",
+            "fullName": "Cadex 36",
+            "cda": -0.002,
+            "weight": 940.0,
+            "wheelType": "road"
+        },
+        "1497226614": {
+            "make": "Cadex",
+            "model": "CADEX 42",
+            "fullName": "Cadex CADEX 42",
+            "cda": -0.004,
+            "weight": 975.0,
+            "wheelType": "road"
+        },
+        "2621265514": {
+            "make": "Cadex",
+            "model": "CADEX 65",
+            "fullName": "Cadex CADEX 65",
+            "cda": -0.008,
+            "weight": 1000.0,
+            "wheelType": "road"
+        },
+        "2755992695": {
+            "make": "Cadex",
+            "model": "CADEX AR 35",
+            "fullName": "Cadex CADEX AR 35",
+            "cda": -0.001,
+            "weight": 1100.0,
+            "wheelType": "gravel"
+        },
+        "1053884173": {
+            "make": "Campagnolo",
+            "model": "Bora Ultra 35",
+            "fullName": "Campagnolo Bora Ultra 35",
+            "cda": 0.0,
+            "weight": 930.0,
+            "wheelType": "road"
+        },
+        "2696607407": {
+            "make": "Campagnolo",
+            "model": "Bora Ultra 50",
+            "fullName": "Campagnolo Bora Ultra 50",
+            "cda": -0.0055,
+            "weight": 995.0,
+            "wheelType": "road"
+        },
+        "346409677": {
+            "make": "DTSwiss",
+            "model": "ARC 1100 DICUT 62",
+            "fullName": "DTSwiss ARC 1100 DICUT 62",
+            "cda": -0.0072,
+            "weight": 980.0,
+            "wheelType": "road"
+        },
+        "567256284": {
+            "make": "DTSwiss",
+            "model": "ARC 1100 DICUT DISC",
+            "fullName": "DTSwiss ARC 1100 DICUT DISC",
+            "cda": -0.01,
+            "weight": 1110.0,
+            "wheelType": "road"
+        },
+        "190867464": {
+            "make": "Enve",
+            "model": "G23",
+            "fullName": "Enve G23",
+            "cda": -0.001,
+            "weight": 1100.0,
+            "wheelType": "gravel"
+        },
+        "1881778071": {
+            "make": "Enve",
+            "model": "SES 2.2",
+            "fullName": "Enve SES 2.2",
+            "cda": 0.0,
+            "weight": 930.0,
+            "wheelType": "road"
+        },
+        "2223270801": {
+            "make": "Enve",
+            "model": "SES 3.4",
+            "fullName": "Enve SES 3.4",
+            "cda": -0.0055,
+            "weight": 950.0,
+            "wheelType": "road"
+        },
+        "3251069251": {
+            "make": "Enve",
+            "model": "SES 6.7",
+            "fullName": "Enve SES 6.7",
+            "cda": -0.007,
+            "weight": 1100.0,
+            "wheelType": "road"
+        },
+        "2866818884": {
+            "make": "Enve",
+            "model": "SES 7.8",
+            "fullName": "Enve SES 7.8",
+            "cda": -0.009,
+            "weight": 1100.0,
+            "wheelType": "road"
+        },
+        "1767327477": {
+            "make": "Enve",
+            "model": "SES 8.9",
+            "fullName": "Enve SES 8.9",
+            "cda": -0.009,
+            "weight": 1250.0,
+            "wheelType": "road"
+        },
+        "4237316283": {
+            "make": "FFWD",
+            "model": "RYOT55",
+            "fullName": "FFWD RYOT55",
+            "cda": -0.0055,
+            "weight": 980.0,
+            "wheelType": "road"
+        },
+        "2055468653": {
+            "make": "Giant",
+            "model": "SLR 0",
+            "fullName": "Giant SLR 0",
+            "cda": -0.005,
+            "weight": 950.0,
+            "wheelType": "road"
+        },
+        "1791179228": {
+            "make": "HED",
+            "model": "HED Vanquish RC6 Pro",
+            "fullName": "HED HED Vanquish RC6 Pro",
+            "cda": -0.004,
+            "weight": 975.0,
+            "wheelType": "road"
+        },
+        "2282170788": {
+            "make": "Lightweight",
+            "model": "Lightweight Meilenstein",
+            "fullName": "Lightweight Lightweight Meilenstein",
+            "cda": -0.001,
+            "weight": 850.0,
+            "wheelType": "road"
+        },
+        "897949453": {
+            "make": "Mavic",
+            "model": "Comete Pro Carbon SL UST",
+            "fullName": "Mavic Comete Pro Carbon SL UST",
+            "cda": -0.0055,
+            "weight": 1225.0,
+            "wheelType": "road"
+        },
+        "288225210": {
+            "make": "Mavic",
+            "model": "Cosmic CXR60c",
+            "fullName": "Mavic Cosmic CXR60c",
+            "cda": -0.005,
+            "weight": 1185.0,
+            "wheelType": "road"
+        },
+        "4185901178": {
+            "make": "Mavic",
+            "model": "Cosmic Ultimate UST",
+            "fullName": "Mavic Cosmic Ultimate UST",
+            "cda": -0.0045,
+            "weight": 1145.0,
+            "wheelType": "road"
+        },
+        "1593377918": {
+            "make": "Novatec",
+            "model": "Novatec R4",
+            "fullName": "Novatec Novatec R4",
+            "cda": -0.00025,
+            "weight": 1100.0,
+            "wheelType": "road"
+        },
+        "635220876": {
+            "make": "Reserve",
+            "model": "Reserve 25 GR",
+            "fullName": "Reserve Reserve 25 GR",
+            "cda": -0.001,
+            "weight": 1100.0,
+            "wheelType": "gravel"
+        },
+        "192959988": {
+            "make": "Roval",
+            "model": "Alpinist CLX",
+            "fullName": "Roval Alpinist CLX",
+            "cda": -0.001,
+            "weight": 845.0,
+            "wheelType": "road"
+        },
+        "2612651137": {
+            "make": "Roval",
+            "model": "CLX64",
+            "fullName": "Roval CLX64",
+            "cda": -0.006,
+            "weight": 1110.0,
+            "wheelType": "road"
+        },
+        "2181416413": {
+            "make": "Roval",
+            "model": "Rapide CLX",
+            "fullName": "Roval Rapide CLX",
+            "cda": -0.006,
+            "weight": 1050.0,
+            "wheelType": "road"
+        },
+        "327143135": {
+            "make": "Roval",
+            "model": "Terra CLX",
+            "fullName": "Roval Terra CLX",
+            "cda": -0.001,
+            "weight": 1100.0,
+            "wheelType": "gravel"
+        },
+        "4235764609": {
+            "make": "Shimano",
+            "model": "C40",
+            "fullName": "Shimano C40",
+            "cda": -0.0025,
+            "weight": 1100.0,
+            "wheelType": "road"
+        },
+        "1742598126": {
+            "make": "Shimano",
+            "model": "C50",
+            "fullName": "Shimano C50",
+            "cda": -0.003,
+            "weight": 1175.0,
+            "wheelType": "road"
+        },
+        "272842014": {
+            "make": "Shimano",
+            "model": "C60",
+            "fullName": "Shimano C60",
+            "cda": -0.0055,
+            "weight": 1250.0,
+            "wheelType": "road"
+        },
+        "442607221": {
+            "make": "Zipp",
+            "model": "202",
+            "fullName": "Zipp 202",
+            "cda": -0.001,
+            "weight": 950.0,
+            "wheelType": "road"
+        },
+        "1544928391": {
+            "make": "Zipp",
+            "model": "353 NSW",
+            "fullName": "Zipp 353 NSW",
+            "cda": -0.0065,
+            "weight": 980.0,
+            "wheelType": "road"
+        },
+        "613983807": {
+            "make": "Zipp",
+            "model": "404",
+            "fullName": "Zipp 404",
+            "cda": -0.007,
+            "weight": 1020.0,
+            "wheelType": "road"
+        },
+        "667389725": {
+            "make": "Zipp",
+            "model": "454",
+            "fullName": "Zipp 454",
+            "cda": -0.0075,
+            "weight": 1000.0,
+            "wheelType": "road"
+        },
+        "1500161707": {
+            "make": "Zipp",
+            "model": "808",
+            "fullName": "Zipp 808",
+            "cda": -0.009,
+            "weight": 1130.0,
+            "wheelType": "road"
+        },
+        "4169703170": {
+            "make": "Zipp",
+            "model": "858",
+            "fullName": "Zipp 858",
+            "cda": -0.0095,
+            "weight": 1110.0,
+            "wheelType": "road"
+        },
+        "789015973": {
+            "make": "Zipp",
+            "model": "858/Super9",
+            "fullName": "Zipp 858/Super9",
+            "cda": -0.0095,
+            "weight": 1110.0,
+            "wheelType": "road"
+        },
+        "2907165694": {
+            "make": "Zwift",
+            "model": "8-Bit",
+            "fullName": "Zwift 8-Bit",
+            "cda": 0.001,
+            "weight": 1100.0,
+            "wheelType": "road"
+        },
+        "2568138708": {
+            "make": "Zwift",
+            "model": "Buffalo Fahrrad",
+            "fullName": "Zwift Buffalo Fahrrad",
+            "cda": 0.001,
+            "weight": 1100.0,
+            "wheelType": "road"
+        },
+        "1860958943": {
+            "make": "Zwift",
+            "model": "Classic",
+            "fullName": "Zwift Classic",
+            "cda": 0.001,
+            "weight": 1100.0,
+            "wheelType": "road"
+        },
+        "998391700": {
+            "make": "Zwift",
+            "model": "Concept",
+            "fullName": "Zwift Concept",
+            "cda": -0.01,
+            "weight": 1000.0,
+            "wheelType": "tron"
+        },
+        "1820135676": {
+            "make": "Zwift",
+            "model": "Gravel",
+            "fullName": "Zwift Gravel",
+            "cda": -0.001,
+            "weight": 1150.0,
+            "wheelType": "gravel"
+        },
+        "4221174482": {
+            "make": "Zwift",
+            "model": "Handcycle",
+            "fullName": "Zwift Handcycle",
+            "cda": 0.0,
+            "weight": 1100.0,
+            "wheelType": "handcycle"
+        },
+        "3787145210": {
+            "make": "Zwift",
+            "model": "Mountain",
+            "fullName": "Zwift Mountain",
+            "cda": 0.0005,
+            "weight": 1250.0,
+            "wheelType": "mtb"
+        },
+        "1324365960": {
+            "make": "Zwift",
+            "model": "Plain",
+            "fullName": "Zwift Plain",
+            "cda": -0.0055,
+            "weight": 1225.0,
+            "wheelType": "road"
+        },
+        "1763482218": {
+            "make": "Zwift",
+            "model": "Safety",
+            "fullName": "Zwift Safety",
+            "cda": 0.0,
+            "weight": 1000.0,
+            "wheelType": "road"
+        },
+        "1766659417": {
+            "make": "Zwift",
+            "model": "Supersonic Wheelset",
+            "fullName": "Zwift Supersonic Wheelset",
+            "cda": -0.001,
+            "weight": 1150.0,
+            "wheelType": "road"
+        },
+        "69023253": {
+            "make": "Zwift",
+            "model": "Zwift BW Concept",
+            "fullName": "Zwift Zwift BW Concept",
+            "cda": 0.0,
+            "weight": 1100.0,
+            "wheelType": "road"
+        },
+        "3849702821": {
+            "make": "Zwift",
+            "model": "Zwift Skeletal",
+            "fullName": "Zwift Zwift Skeletal",
+            "cda": -0.004,
+            "weight": 1015.0,
+            "wheelType": "road"
+        },
+        "1361038541": {
+            "make": "Zwift",
+            "model": "Zwift Trike",
+            "fullName": "Zwift Zwift Trike",
+            "cda": 0.0,
+            "weight": 1100.0,
+            "wheelType": "road"
+        }
+    },
+    "rearWheels": {
+        "3594144634": {
+            "make": "Bontrager",
+            "model": "Aeolus5",
+            "fullName": "Bontrager Aeolus5",
+            "cda": -0.002,
+            "weight": 1215.0,
+            "wheelType": "road"
+        },
+        "1887739925": {
+            "make": "Cadex",
+            "model": "36",
+            "fullName": "Cadex 36",
+            "cda": 0.0,
+            "weight": 1080.0,
+            "wheelType": "road"
+        },
+        "1347687916": {
+            "make": "Cadex",
+            "model": "CADEX 42",
+            "fullName": "Cadex CADEX 42",
+            "cda": -0.001,
+            "weight": 1135.0,
+            "wheelType": "road"
+        },
+        "3940857684": {
+            "make": "Cadex",
+            "model": "CADEX 65",
+            "fullName": "Cadex CADEX 65",
+            "cda": -0.0025,
+            "weight": 1150.0,
+            "wheelType": "road"
+        },
+        "1248620278": {
+            "make": "Cadex",
+            "model": "CADEX AR 35",
+            "fullName": "Cadex CADEX AR 35",
+            "cda": -0.0005,
+            "weight": 1400.0,
+            "wheelType": "gravel"
+        },
+        "1614586487": {
+            "make": "Campagnolo",
+            "model": "Bora Ultra 35",
+            "fullName": "Campagnolo Bora Ultra 35",
+            "cda": 0.0,
+            "weight": 1080.0,
+            "wheelType": "road"
+        },
+        "1856021360": {
+            "make": "Campagnolo",
+            "model": "Bora Ultra 50",
+            "fullName": "Campagnolo Bora Ultra 50",
+            "cda": -0.0025,
+            "weight": 1155.0,
+            "wheelType": "road"
+        },
+        "2049111692": {
+            "make": "DTSwiss",
+            "model": "ARC 1100 DICUT 62",
+            "fullName": "DTSwiss ARC 1100 DICUT 62",
+            "cda": -0.0033,
+            "weight": 1150.0,
+            "wheelType": "road"
+        },
+        "2783190436": {
+            "make": "DTSwiss",
+            "model": "ARC 1100 DICUT DISC",
+            "fullName": "DTSwiss ARC 1100 DICUT DISC",
+            "cda": -0.008,
+            "weight": 1690.0,
+            "wheelType": "road"
+        },
+        "1694719327": {
+            "make": "Enve",
+            "model": "G23",
+            "fullName": "Enve G23",
+            "cda": -0.0005,
+            "weight": 1400.0,
+            "wheelType": "gravel"
+        },
+        "2649189525": {
+            "make": "Enve",
+            "model": "SES 2.2",
+            "fullName": "Enve SES 2.2",
+            "cda": 0.0,
+            "weight": 1125.0,
+            "wheelType": "road"
+        },
+        "3835575171": {
+            "make": "Enve",
+            "model": "SES 3.4",
+            "fullName": "Enve SES 3.4",
+            "cda": -0.0025,
+            "weight": 1135.0,
+            "wheelType": "road"
+        },
+        "2026413230": {
+            "make": "Enve",
+            "model": "SES 6.7",
+            "fullName": "Enve SES 6.7",
+            "cda": -0.003,
+            "weight": 1300.0,
+            "wheelType": "road"
+        },
+        "886534142": {
+            "make": "Enve",
+            "model": "SES 7.8",
+            "fullName": "Enve SES 7.8",
+            "cda": -0.0045,
+            "weight": 1200.0,
+            "wheelType": "road"
+        },
+        "2402320131": {
+            "make": "Enve",
+            "model": "SES 8.9",
+            "fullName": "Enve SES 8.9",
+            "cda": -0.0045,
+            "weight": 1350.0,
+            "wheelType": "road"
+        },
+        "4151096267": {
+            "make": "FFWD",
+            "model": "RYOT55",
+            "fullName": "FFWD RYOT55",
+            "cda": -0.0025,
+            "weight": 1150.0,
+            "wheelType": "road"
+        },
+        "1023074440": {
+            "make": "Giant",
+            "model": "SLR 0",
+            "fullName": "Giant SLR 0",
+            "cda": -0.002,
+            "weight": 1135.0,
+            "wheelType": "road"
+        },
+        "2913819265": {
+            "make": "HED",
+            "model": "HED Vanquish RC6 Pro",
+            "fullName": "HED HED Vanquish RC6 Pro",
+            "cda": -0.001,
+            "weight": 1135.0,
+            "wheelType": "road"
+        },
+        "3659884507": {
+            "make": "Lightweight",
+            "model": "Lightweight Meilenstein",
+            "fullName": "Lightweight Lightweight Meilenstein",
+            "cda": -0.003,
+            "weight": 985.0,
+            "wheelType": "road"
+        },
+        "4001596344": {
+            "make": "Mavic",
+            "model": "Comete Pro Carbon SL UST",
+            "fullName": "Mavic Comete Pro Carbon SL UST",
+            "cda": -0.0025,
+            "weight": 1460.0,
+            "wheelType": "road"
+        },
+        "4064842315": {
+            "make": "Mavic",
+            "model": "Cosmic CXR60c",
+            "fullName": "Mavic Cosmic CXR60c",
+            "cda": -0.002,
+            "weight": 1420.0,
+            "wheelType": "road"
+        },
+        "413360396": {
+            "make": "Mavic",
+            "model": "Cosmic Ultimate UST",
+            "fullName": "Mavic Cosmic Ultimate UST",
+            "cda": -0.0015,
+            "weight": 1380.0,
+            "wheelType": "road"
+        },
+        "4182312168": {
+            "make": "Novatec",
+            "model": "Novatec R4",
+            "fullName": "Novatec Novatec R4",
+            "cda": -0.001,
+            "weight": 1300.0,
+            "wheelType": "road"
+        },
+        "1842698274": {
+            "make": "Reserve",
+            "model": "Reserve 25 GR",
+            "fullName": "Reserve Reserve 25 GR",
+            "cda": -0.0005,
+            "weight": 1400.0,
+            "wheelType": "gravel"
+        },
+        "2235474271": {
+            "make": "Roval",
+            "model": "Alpinist CLX",
+            "fullName": "Roval Alpinist CLX",
+            "cda": -0.003,
+            "weight": 980.0,
+            "wheelType": "road"
+        },
+        "59917648": {
+            "make": "Roval",
+            "model": "CLX64",
+            "fullName": "Roval CLX64",
+            "cda": -0.0035,
+            "weight": 1265.0,
+            "wheelType": "road"
+        },
+        "3548735686": {
+            "make": "Roval",
+            "model": "Rapide CLX",
+            "fullName": "Roval Rapide CLX",
+            "cda": -0.003,
+            "weight": 1165.0,
+            "wheelType": "road"
+        },
+        "3454205320": {
+            "make": "Roval",
+            "model": "Terra CLX",
+            "fullName": "Roval Terra CLX",
+            "cda": -0.0005,
+            "weight": 1400.0,
+            "wheelType": "gravel"
+        },
+        "530549195": {
+            "make": "Shimano",
+            "model": "C40",
+            "fullName": "Shimano C40",
+            "cda": -0.001,
+            "weight": 1300.0,
+            "wheelType": "road"
+        },
+        "3725678091": {
+            "make": "Shimano",
+            "model": "C50",
+            "fullName": "Shimano C50",
+            "cda": -0.0015,
+            "weight": 1375.0,
+            "wheelType": "road"
+        },
+        "1207119882": {
+            "make": "Shimano",
+            "model": "C60",
+            "fullName": "Shimano C60",
+            "cda": -0.002,
+            "weight": 1450.0,
+            "wheelType": "road"
+        },
+        "1847864599": {
+            "make": "Zipp",
+            "model": "202",
+            "fullName": "Zipp 202",
+            "cda": -0.0005,
+            "weight": 1135.0,
+            "wheelType": "road"
+        },
+        "2019751723": {
+            "make": "Zipp",
+            "model": "353 NSW",
+            "fullName": "Zipp 353 NSW",
+            "cda": -0.0025,
+            "weight": 1150.0,
+            "wheelType": "road"
+        },
+        "4183014640": {
+            "make": "Zipp",
+            "model": "404",
+            "fullName": "Zipp 404",
+            "cda": -0.003,
+            "weight": 1250.0,
+            "wheelType": "road"
+        },
+        "461030369": {
+            "make": "Zipp",
+            "model": "454",
+            "fullName": "Zipp 454",
+            "cda": -0.0035,
+            "weight": 1180.0,
+            "wheelType": "road"
+        },
+        "214800767": {
+            "make": "Zipp",
+            "model": "808",
+            "fullName": "Zipp 808",
+            "cda": -0.004,
+            "weight": 1365.0,
+            "wheelType": "road"
+        },
+        "881139533": {
+            "make": "Zipp",
+            "model": "858",
+            "fullName": "Zipp 858",
+            "cda": -0.0045,
+            "weight": 1305.0,
+            "wheelType": "road"
+        },
+        "1758560098": {
+            "make": "Zipp",
+            "model": "858/Super9",
+            "fullName": "Zipp 858/Super9",
+            "cda": -0.007,
+            "weight": 1690.0,
+            "wheelType": "road"
+        },
+        "4111310185": {
+            "make": "Zwift",
+            "model": "8-Bit",
+            "fullName": "Zwift 8-Bit",
+            "cda": 0.0005,
+            "weight": 1350.0,
+            "wheelType": "road"
+        },
+        "3309968019": {
+            "make": "Zwift",
+            "model": "Buffalo Fahrrad",
+            "fullName": "Zwift Buffalo Fahrrad",
+            "cda": 0.0005,
+            "weight": 1350.0,
+            "wheelType": "road"
+        },
+        "1437212052": {
+            "make": "Zwift",
+            "model": "Classic",
+            "fullName": "Zwift Classic",
+            "cda": 0.0005,
+            "weight": 1350.0,
+            "wheelType": "road"
+        },
+        "961116451": {
+            "make": "Zwift",
+            "model": "Concept",
+            "fullName": "Zwift Concept",
+            "cda": -0.005,
+            "weight": 1000.0,
+            "wheelType": "tron"
+        },
+        "2771477956": {
+            "make": "Zwift",
+            "model": "Gravel",
+            "fullName": "Zwift Gravel",
+            "cda": -0.0005,
+            "weight": 1450.0,
+            "wheelType": "gravel"
+        },
+        "2602078812": {
+            "make": "Zwift",
+            "model": "Handcycle",
+            "fullName": "Zwift Handcycle",
+            "cda": 0.0,
+            "weight": 1400.0,
+            "wheelType": "handcycle"
+        },
+        "1796445915": {
+            "make": "Zwift",
+            "model": "Mountain",
+            "fullName": "Zwift Mountain",
+            "cda": 0.00025,
+            "weight": 1550.0,
+            "wheelType": "mtb"
+        },
+        "705669234": {
+            "make": "Zwift",
+            "model": "Plain",
+            "fullName": "Zwift Plain",
+            "cda": -0.0025,
+            "weight": 1460.0,
+            "wheelType": "road"
+        },
+        "3473846672": {
+            "make": "Zwift",
+            "model": "Safety",
+            "fullName": "Zwift Safety",
+            "cda": 0.0,
+            "weight": 1250.0,
+            "wheelType": "road"
+        },
+        "2506347267": {
+            "make": "Zwift",
+            "model": "Supersonic Wheelset",
+            "fullName": "Zwift Supersonic Wheelset",
+            "cda": -0.0005,
+            "weight": 1450.0,
+            "wheelType": "road"
+        },
+        "413430806": {
+            "make": "Zwift",
+            "model": "Zwift BW Concept",
+            "fullName": "Zwift Zwift BW Concept",
+            "cda": 0.0,
+            "weight": 1400.0,
+            "wheelType": "road"
+        },
+        "1965395406": {
+            "make": "Zwift",
+            "model": "Zwift Skeletal",
+            "fullName": "Zwift Zwift Skeletal",
+            "cda": -0.002,
+            "weight": 1215.0,
+            "wheelType": "road"
+        },
+        "345690674": {
+            "make": "Zwift",
+            "model": "Zwift Trike",
+            "fullName": "Zwift Zwift Trike",
+            "cda": 0.0,
+            "weight": 1400.0,
+            "wheelType": "road"
+        }
+    },
+    "defaultWheels": {
+        "road": {
+            "front": "702195190",
+            "rear": "3594144634"
+        },
+        "mtb": {
+            "front": "3787145210",
+            "rear": "1796445915"
+        },
+        "gravel": {
+            "front": "1820135676",
+            "rear": "2771477956"
+        },
+        "handcycle": {
+            "front": "4221174482",
+            "rear": "2602078812"
+        },
+        "tron": {
+            "front": "998391700",
+            "rear": "961116451"
+        }
+    },
+    "reference": {
+        "riderWeight": 69,
+        "riderHeight": 175,
+        "cda": 0.2916852692,
+        "cdaPerKg": 0.001820819409,
+        "cdaPerCm": 0.001083243965,
+        "weightOffset": -0.7
+    }
+}
