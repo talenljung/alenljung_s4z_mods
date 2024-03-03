@@ -817,8 +817,8 @@
                 "0.00578": "pavement_sand",
                 "0.05952": "pavement_sand",
                 "0.05953": "brick_cobbles",
-                "0.07241": "brick_cobbles",
-                "0.07242": "pavement_sand",
+                "0.0724": "brick_cobbles",
+                "0.07241": "pavement_sand",
                 "0.69019": "pavement_sand",
                 "0.69024": "brick_cobbles",
                 "0.82931": "brick_cobbles",
@@ -838,7 +838,7 @@
             "8": {
                 "0.02189": "pavement_sand",
                 "0.28034": "pavement_sand",
-                "0.28039": "brick_cobbles",
+                "0.28037": "brick_cobbles",
                 "0.69633": "brick_cobbles",
                 "0.69685": "pavement_sand",
                 "0.96492": "pavement_sand"
@@ -866,11 +866,11 @@
             },
             "18": {
                 "0.01154": "brick_cobbles",
-                "0.32894": "brick_cobbles",
+                "0.32898": "brick_cobbles",
                 "0.32904": "pavement_sand",
                 "0.47076": "pavement_sand",
                 "0.47079": "brick_cobbles",
-                "0.75365": "brick_cobbles",
+                "0.7537": "brick_cobbles",
                 "0.75383": "pavement_sand",
                 "0.97262": "pavement_sand"
             },
@@ -913,7 +913,7 @@
                 "1.0": "pavement_sand"
             },
             "29": {
-                "0.18895": "pavement_sand",
+                "0.05333": "pavement_sand",
                 "0.96457": "pavement_sand"
             },
             "30": {
@@ -1177,7 +1177,7 @@
                 "0.79866": "pavement_sand"
             },
             "100": {
-                "0.02222": "pavement_sand",
+                "0.02136": "pavement_sand",
                 "0.97862": "pavement_sand"
             },
             "101": {
@@ -1288,7 +1288,7 @@
                 "0.292": "wood",
                 "0.31946": "wood",
                 "0.31952": "dirt",
-                "0.4338": "dirt",
+                "0.43382": "dirt",
                 "0.43386": "pavement_sand",
                 "0.48842": "pavement_sand",
                 "0.48843": "dirt",
@@ -1310,7 +1310,7 @@
                 "0.07898": "wood",
                 "0.12458": "wood",
                 "0.12462": "pavement_sand",
-                "0.47197": "pavement_sand",
+                "0.47198": "pavement_sand",
                 "0.47199": "dirt",
                 "0.58958": "dirt",
                 "0.58961": "pavement_sand",
@@ -1318,7 +1318,7 @@
             },
             "132": {
                 "0.0071": "pavement_sand",
-                "0.63379": "pavement_sand"
+                "0.9608": "pavement_sand"
             },
             "133": {
                 "0.00526": "pavement_sand",
@@ -1336,7 +1336,7 @@
                 "0.03252": "pavement_sand",
                 "0.17019": "pavement_sand",
                 "0.1702": "wood",
-                "0.33641": "wood",
+                "0.33642": "wood",
                 "0.33644": "pavement_sand",
                 "0.83356": "pavement_sand",
                 "0.83359": "wood",
@@ -1346,11 +1346,11 @@
             },
             "135": {
                 "0.13894": "pavement_sand",
-                "0.65686": "pavement_sand"
+                "0.65752": "pavement_sand"
             },
             "136": {
                 "0.07507": "pavement_sand",
-                "0.96993": "pavement_sand"
+                "0.97067": "pavement_sand"
             },
             "137": {
                 "0.03507": "pavement_sand",
@@ -1371,7 +1371,7 @@
                 "0.9007": "pavement_sand"
             },
             "141": {
-                "0.00957": "pavement_sand",
+                "0.00913": "pavement_sand",
                 "0.96533": "pavement_sand"
             },
             "142": {
@@ -1379,11 +1379,11 @@
                 "0.9597": "pavement_sand"
             },
             "144": {
-                "0.15697": "pavement_sand",
+                "0.0129": "pavement_sand",
                 "0.7383": "pavement_sand"
             },
             "147": {
-                "0.19917": "pavement_sand",
+                "0.00793": "pavement_sand",
                 "0.99113": "pavement_sand"
             },
             "148": {
@@ -1412,7 +1412,7 @@
             },
             "155": {
                 "0.0286": "pavement_sand",
-                "0.83243": "pavement_sand"
+                "0.83417": "pavement_sand"
             },
             "156": {
                 "0.00927": "pavement_sand",
@@ -1421,7 +1421,7 @@
         },
         "14": {
             "0": {
-                "0.01691": "pavement_sand",
+                "0.00763": "pavement_sand",
                 "0.9091": "pavement_sand",
                 "0.90913": "brick_cobbles",
                 "0.91998": "brick_cobbles",
@@ -1440,6 +1440,14 @@
                 "0.19243": "pavement_sand",
                 "0.64917": "pavement_sand"
             },
+            "4": {
+                "7e-05": "pavement_sand",
+                "0.99995": "pavement_sand"
+            },
+            "5": {
+                "0.14564": "pavement_sand",
+                "0.81067": "pavement_sand"
+            },
             "6": {
                 "0.35246": "pavement_sand",
                 "0.87872": "pavement_sand"
@@ -1454,8 +1462,8 @@
                 "0.16292": "brick_cobbles",
                 "0.18992": "brick_cobbles",
                 "0.18994": "pavement_sand",
-                "0.35369": "pavement_sand",
-                "0.3537": "brick_cobbles",
+                "0.3537": "pavement_sand",
+                "0.35371": "brick_cobbles",
                 "0.3554": "brick_cobbles",
                 "0.35541": "pavement_sand",
                 "0.42464": "pavement_sand",
@@ -1466,7 +1474,7 @@
                 "0.50111": "brick_cobbles",
                 "0.50407": "brick_cobbles",
                 "0.50408": "pavement_sand",
-                "0.54299": "pavement_sand"
+                "0.99915": "pavement_sand"
             }
         },
         "15": {
