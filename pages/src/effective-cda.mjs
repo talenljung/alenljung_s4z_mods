@@ -1,7 +1,7 @@
 import * as sauce from '/pages/src/../../shared/sauce/index.mjs';
 import * as common from '/pages/src/common.mjs';
-import crrDbJson from './crr.json' assert { type: 'json' };
-import bikesDbJson from './bikes.json' assert { type: 'json' };
+import crrDbJson from './crr.json' with { type: 'json' };
+import bikesDbJson from './bikes.json' with { type: 'json' };
 
 const doc = document.documentElement;
 const L = sauce.locale;
@@ -12,6 +12,7 @@ let gameConnection;
 const page = location.pathname.split('/').at(-1).split('.')[0];
 
 const bikeData = {
+    "Autoselect": { weight: 50, tyreType: 'road'},
     "Canyon Aeroad 2021, DT Swiss ARC 1100 DICUT DISC": { weight: 6.326516434, tyreType: 'road'},
     "Pinarello Dogma F, DT Swiss ARC 1100 DICUT DISC": { weight: 6.111778897, tyreType: 'road'},
     "Scott Addict RC, DT Swiss ARC 1100 DICUT DISC": { weight: 5.969539361, tyreType: 'road'},
@@ -205,7 +206,7 @@ export async function main() {
             speedKphOld = null;
             powerOld = null;
         }
-        if (watching.athlete.bikeFrame && watching.athlete.bikeWheelFront && watching.athlete.bikeWheelRear && 
+        if (selectedBike == "Autoselect" && watching.athlete.bikeFrame && watching.athlete.bikeWheelFront && watching.athlete.bikeWheelRear &&
             (watching.athlete.bikeFrame != bikeFrameId || watching.athlete.bikeWheelFront != bikeFrontWheelId || watching.athlete.bikeWheelRear != bikeRearWheelId)) {
             bikeFrameId = watching.athlete.bikeFrame;
             const bikeFrame = bikesDbJson.frames[bikeFrameId];
@@ -240,7 +241,7 @@ export async function main() {
         }
         speedKphOld = speedKphOld ?? speedKph;
         powerOld = powerOld ?? watching.state.power;
-        
+
         const deltaTimeMs = time - timeOld;
         const deltaDistance = speedKph * deltaTimeMs / 3600;
 
@@ -250,7 +251,7 @@ export async function main() {
         }
         gradientPercentHistory.push(gradientPercent);
         deltaTimeMsHistory.push(deltaTimeMs);
-        
+
         const gradientPercentAverage = timeWindowAverage(gradientPercentHistory, deltaTimeMsHistory, gradientAverageWindowSizeMs);
 
         const riderWeight = watching.athlete.weight
