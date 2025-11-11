@@ -36,5 +36,20 @@
             "x": -300,
             "y": 100
         }
+    },
+    {
+        "file": "pages/save-pen-warmup.html",
+        "id": "alenljung-save-pen-warmup",
+        "name": "Save Pen Warmup",
+        "description": "Saves the warmup data at event start",
+        "always_visible": true,
+        "overlay": true,
+        "frame": false,
+        "default_bounds": {
+            "width": 400,
+            "height": 400,
+            "x": -300,
+            "y": 100
+        }
     }]
 }

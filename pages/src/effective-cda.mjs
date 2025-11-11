@@ -1,6 +1,6 @@
 import * as sauce from '/pages/src/../../shared/sauce/index.mjs';
 import * as common from '/pages/src/common.mjs';
-import crrDbJson from './crr.json' assert { type: 'json' };
+import crrDbJson from './crr.json' with { type: 'json' };
 
 const doc = document.documentElement;
 const L = sauce.locale;
@@ -212,7 +212,7 @@ export async function main() {
         }
         speedKphOld = speedKphOld ?? speedKph;
         powerOld = powerOld ?? watching.state.power;
-        
+
         const deltaTimeMs = time - timeOld;
         const deltaDistance = speedKph * deltaTimeMs / 3600;
 
@@ -222,7 +222,7 @@ export async function main() {
         }
         gradientPercentHistory.push(gradientPercent);
         deltaTimeMsHistory.push(deltaTimeMs);
-        
+
         const gradientPercentAverage = timeWindowAverage(gradientPercentHistory, deltaTimeMsHistory, gradientAverageWindowSizeMs);
 
         const riderWeight = watching.athlete.weight
