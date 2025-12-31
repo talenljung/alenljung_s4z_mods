@@ -54,6 +54,16 @@
                 font-size: smaller;
                 font-style: italic;
             }
+            .alButton {
+                background: transparent;
+                border: none;
+                color: inherit;
+                font-size: inherit;
+                cursor: pointer;
+            }
+            .alButton:hover {
+                opacity: 0.7;
+            }
         </style>
         <link id="favicon" rel="shortcut icon" href="../../../../images/favicon.png"/>
     </head>
@@ -66,6 +76,7 @@
                     <div class="button reset" title="Reset">Reset</div>
                     <a class="button open-settings" href="./pull-duration-settings.html?width=380&height=720&child-window"
                     title="Open settings window" target="gradient-settings"><ms>settings</ms></a>
+                    <button id="saveJson" class="alButton" title="Export to JSON file">&#x1F4BE;</button>
                     <div title="Minimize" class="button minimize electron-only"><ms>minimize</ms></div>
                     <div title="Close this window" class="button close electron-only"><ms>close</ms></div>
                 </div>

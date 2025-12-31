@@ -37,6 +37,8 @@ if (window.isElectron) {
     }
 }
 
+let startTime = Date.now()
+let latestStartTime = 0;
 let latestDuration = 0;
 let latestSumPowerTimesDuration = 0;
 let oldWorldTimeS = undefined;
@@ -105,7 +107,7 @@ function accumHistoricDuration(history) {
 }
 
 function accumHistoricEnergy(history) {
-    return  history.reduce((sum, elem) => sum + elem.sumPowerTimesDuration, 0);
+    return  history.reduce((sum, elem) => sum + elem.energy, 0);
 }
 
 function updateTable() {
@@ -133,14 +135,14 @@ function updateTable() {
         let row = pullDraftTable.rows[i + numStaticRows];
         if (i < pullHistory.length) {
             row.cells[0].innerHTML = formatDuration(pullHistory[pullHistory.length - 1 - i].duration);
-            row.cells[1].innerHTML = formatAvgPower(pullHistory[pullHistory.length - 1 - i].avgPower);
+            row.cells[1].innerHTML = formatAvgPower(pullHistory[pullHistory.length - 1 - i].power);
         } else {
             row.cells[0].innerHTML = '';
             row.cells[1].innerHTML = '';
         }
         if (i < draftHistory.length) {
             row.cells[2].innerHTML = formatDuration(draftHistory[draftHistory.length - 1 - i].duration);
-            row.cells[3].innerHTML = formatAvgPower(draftHistory[draftHistory.length - 1 - i].avgPower);
+            row.cells[3].innerHTML = formatAvgPower(draftHistory[draftHistory.length - 1 - i].power);
         } else {
             row.cells[2].innerHTML = '';
             row.cells[3].innerHTML = '';
@@ -148,11 +150,38 @@ function updateTable() {
     }
 }
 
+function getSaveData() {
+    let pullHistoryWithLatest = pullHistory.slice()
+    let recoveryHistoryWithLatest = draftHistory.slice()
+    addToHistory(isPulling ? pullHistoryWithLatest : recoveryHistoryWithLatest)
+    const accumPullDuration = accumHistoricDuration(pullHistoryWithLatest)
+    const accumDraftDuration = accumHistoricDuration(recoveryHistoryWithLatest)
+    const accumPullEnergy = accumHistoricEnergy(pullHistoryWithLatest)
+    const accumDraftEnergy = accumHistoricEnergy(recoveryHistoryWithLatest)
+    let exportData = {
+        athlete:currentAthlete,
+        startTime:new Date(startTime).toLocaleString(),
+        minDuration:minDuration,
+        pullPowerThreshold:pullPowerThreshold,
+        pullDuration:accumPullDuration,
+        pullEnergy:accumPullEnergy,
+        pullPower:accumPullEnergy/accumPullDuration,
+        recoveryDuration:accumDraftDuration,
+        recoveryEnergy:accumDraftEnergy,
+        recoveryPower:accumDraftEnergy/accumDraftDuration,
+        pulls:pullHistoryWithLatest,
+        recoveries:recoveryHistoryWithLatest
+    }
+    return exportData
+}
+
 function addToHistory(h) {
-    h.push({duration:latestDuration, sumPowerTimesDuration: latestSumPowerTimesDuration, avgPower: latestSumPowerTimesDuration/latestDuration});
+    h.push({duration:latestDuration, energy: latestSumPowerTimesDuration, power: latestSumPowerTimesDuration/latestDuration, startTime:latestStartTime});
 }
 
 function reset() {
+    startTime = Date.now()
+    latestStartTime = 0;
     latestDuration = 0;
     latestSumPowerTimesDuration = 0;
     oldWorldTimeS = undefined;
@@ -167,6 +196,7 @@ function onAthleteData(data) {
     if (currentAthlete != data.athleteId || !data.state.time) {
         reset();
         currentAthlete = data.athleteId;
+        latestStartTime = data.state.time;
     }
     athleteWeight = data.athlete ? data.athlete.weight : undefined;
     const worldTimeS = data.state.worldTime / 1000.0;
@@ -175,13 +205,15 @@ function onAthleteData(data) {
     if (isPulling != wasPulling) {
         if (latestDuration > minDuration) {
             addToHistory(wasPulling ? pullHistory : draftHistory);
+            latestStartTime = data.state.time;
             latestDuration = 0;
             latestSumPowerTimesDuration = 0;
         } else {
             let saved = isPulling ? pullHistory.pop() : draftHistory.pop();
             if (saved != undefined) {
+                latestStartTime = saved.startTime;
                 latestDuration += saved.duration;
-                latestSumPowerTimesDuration += saved.sumPowerTimesDuration;
+                latestSumPowerTimesDuration += saved.energy;
             }
         }
     } else if (isPulling === wasPulling) {
@@ -251,6 +283,22 @@ export async function main() {
     
     const resetBtn = document.querySelector('.button.reset');
     resetBtn.addEventListener('click', reset);
+
+    const saveJsonButton = document.getElementById("saveJson");
+    saveJsonButton.addEventListener("click", () => {
+        const jsonResults = JSON.stringify(getSaveData(), null, 2);
+        const resultsBlob = new Blob([jsonResults], { type: "application/json" });
+        const url = URL.createObjectURL(resultsBlob);
+        const a = document.createElement("a");
+        a.href = url;
+        // const suggestedFileName = `pull-duration-${currentAthlete}-${new Date(Date.now()).toLocaleString()}.json`;
+        const suggestedFileName = `pull-duration-${currentAthlete}.json`;
+        a.download = suggestedFileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    })
     
     initHistoryTable();
     common.subscribe(`athlete/watching`, onAthleteData);
