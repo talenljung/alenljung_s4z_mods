@@ -78,7 +78,35 @@ const g = 9.81;
 var selectedBike = Object.keys(bikeData)[0];
 var cdaAverageWindowSizeMs = defaultCdaAverageWindowSizeMs;
 
-function getSurface(courseId, roadId, roadCompletion, isReverse) {
+function getRoadStyle(roads, roadId, roadCompletion, isReverse) {
+    let road = roads[roadId]
+    let styles = 'defaultStyle' in road ? [road.defaultStyle] : [];
+    if (styles.length === 0) {
+        // console.warn(`Road ${roadId} has no default style`);
+    }
+    const currentProgress = (isReverse ? 1000000 - roadCompletion : roadCompletion) / 1000000
+    for (const roadSegment of road.styles) {
+        if (currentProgress >= roadSegment.start && currentProgress <= roadSegment.end) {
+            styles.push(roadSegment.style)
+        }
+    }
+    return styles
+}
+
+function getSurfaceAndCrrFromRoadStyle(roads, roadId, roadCompletion, isReverse, tyreType) {
+    const styles = getRoadStyle(roads, roadId, roadCompletion, isReverse);
+    const style = styles.length > 0 ? styles[styles.length - 1] : "UNDEFINED";
+    const surface = style.includes('DIRT')     ? 'dirt' :
+                    style.includes('GRAVEL')   ? 'gravel' :
+                    style.includes('WOODEN')   ? 'wood' :
+                    style.includes('BRICK')    ? 'brick' :
+                    style.includes('COBBLE')   ? 'cobbles' :
+                    style.includes('MOUNTAIN') ? 'ice_snow' :
+                    /* else */                   'pavement_sand';
+    return [`${style}-${surface}`, crrDbJson.surfaces[surface][tyreType]];
+}
+
+function getSurfaceFromDb(courseId, roadId, roadCompletion, isReverse) {
     if (courseId in crrDbJson.roads && roadId in crrDbJson.roads[courseId])
     {
         const currentProgress = (isReverse ? 1000000 - roadCompletion : roadCompletion) / 1000000
@@ -100,12 +128,12 @@ function getSurface(courseId, roadId, roadCompletion, isReverse) {
 }
 
 function getCrr(courseId, roadId, roadCompletion, isReverse, tyreType) {
-    const surface = getSurface(courseId, roadId, roadCompletion, isReverse)
+    const surface = getSurfaceFromDb(courseId, roadId, roadCompletion, isReverse)
     return crrDbJson.surfaces[surface ?? 'pavement_sand'][tyreType];
 }
 
-function getSurfaceAndCrr(courseId, roadId, roadCompletion, isReverse, tyreType) {
-    const surface = getSurface(courseId, roadId, roadCompletion, isReverse)
+function getSurfaceAndCrrFromDb(courseId, roadId, roadCompletion, isReverse, tyreType) {
+    const surface = getSurfaceFromDb(courseId, roadId, roadCompletion, isReverse)
     return [surface, crrDbJson.surfaces[surface ?? 'pavement_sand'][tyreType]];
 }
 
@@ -189,7 +217,10 @@ export async function main() {
     const gradientAverageWindowSizeMs = 500;
     const historyLength = 200;
     const extraWeight = 0.2;
-    common.subscribe('athlete/watching', watching => {
+    let courseId = undefined;
+    let roads = undefined;
+    let useRoadStylesForCrr = true;
+    common.subscribe('athlete/watching', async watching => {
         if (watching.athleteId !== athleteId) {
             athleteId = watching.athleteId;
             gradientPercentHistory = [0];
@@ -199,6 +230,11 @@ export async function main() {
             timeOld = null;
             speedKphOld = null;
             powerOld = null;
+        }
+        if (courseId !== watching.state.courseId) {
+            courseId = watching.state.courseId;
+            const roadsRaw = (await common.getRoads(courseId));//.concat(await common.getRoads('portal'));
+            roads = roadsRaw.reduce((map, obj) => (map[obj.id] = obj, map), {});
         }
         const altitude = watching.state.altitude;
         const time = watching.state.worldTime;
@@ -228,7 +264,10 @@ export async function main() {
         const riderWeight = watching.athlete.weight
         const bikeWeight = bikeData[selectedBike].weight + extraWeight;
         const height = watching.athlete.height
-        const [surface, crr] = getSurfaceAndCrr(watching.state.courseId, watching.state.roadId, watching.state.roadCompletion, watching.state.reverse, bikeData[selectedBike].tyreType);
+        
+        const [surface, crr] = useRoadStylesForCrr ?
+            getSurfaceAndCrrFromRoadStyle(roads, watching.state.roadId, watching.state.roadCompletion, watching.state.reverse, bikeData[selectedBike].tyreType) :
+            getSurfaceAndCrrFromDb(watching.state.courseId, watching.state.roadId, watching.state.roadCompletion, watching.state.reverse, bikeData[selectedBike].tyreType);
         const powerToUse = deltaTimeMs > 300 ? watching.state.power : powerOld;
         const cda = effectiveCda(height, riderWeight, bikeWeight, powerToUse, speedKph, speedKphOld, deltaTimeMs/1000, gradientPercentHistory[gradientPercentHistory.length-2], crr);
         cdaHistory.push(cda);
@@ -242,7 +281,7 @@ export async function main() {
         console.debug(logarray)
         if (page == 'effective-cda') {
             document.getElementById('act_cda').innerHTML = formatcda(cdaAverage);
-            document.getElementById('act_crr').innerHTML = `${(surface ?? 'Unknown').replace('_', '/')} ${crr}`;
+            // document.getElementById('act_crr').innerHTML = `${(surface ?? 'Unknown').replace('_', '/')} ${crr}`;
         }
         timeOld = time;
         speedKphOld = speedKph;
