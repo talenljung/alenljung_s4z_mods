@@ -291,8 +291,8 @@ export async function main() {
         const url = URL.createObjectURL(resultsBlob);
         const a = document.createElement("a");
         a.href = url;
-        // const suggestedFileName = `pull-duration-${currentAthlete}-${new Date(Date.now()).toLocaleString()}.json`;
-        const suggestedFileName = `pull-duration-${currentAthlete}.json`;
+        const timestamp = new Date(Date.now()).toISOString().replace(/[.].*/, '')
+        const suggestedFileName = `pull-duration-${timestamp}.json`;
         a.download = suggestedFileName;
         document.body.appendChild(a);
         a.click();
