@@ -10,30 +10,40 @@
             "mtb": 0.009,
             "gravel": 0.008
         },
+        "brick": {
+            "road": 0.0055,
+            "mtb": 0.009,
+            "gravel": 0.008
+        },
+        "cobbles": {
+            "road": 0.0065,
+            "mtb": 0.009,
+            "gravel": 0.008
+        },
         "wood": {
             "road": 0.0065,
             "mtb": 0.009,
             "gravel": 0.008
         },
         "ice_snow": {
-            "road": 0.0075,
+            "road": 0.0055,
             "mtb": 0.014,
-            "gravel": 0.018
+            "gravel": 0.006
         },
         "dirt": {
             "road": 0.016,
             "mtb": 0.01,
-            "gravel": 0.012
+            "gravel": 0.009
         },
         "grass": {
-            "road": null,
-            "mtb": 0.042,
-            "gravel": null
+            "road": 0.025,
+            "mtb": 0.014,
+            "gravel": 0.016
         },
         "gravel": {
             "road": 0.012,
-            "mtb": 0.009,
-            "gravel": 0.009
+            "mtb": 0.014,
+            "gravel": 0.006
         }
     },
     "roads": {
